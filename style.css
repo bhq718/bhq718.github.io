@@ -1,14 +1,30 @@
 
+header{
+    background-color: #e07e3d;
+    text-align: left;
+}
+
+#calico {
+    max-width: 200px;
+}
+
 body {
- background-color: #fcfcf0 ;
- color: #4a3432 ;
- text-emphasis-color: #e07e3d ;
+    background-color: #fcfcf0 ;
+    color: #4a3432 ;
+    text-emphasis-color: #e07e3d ;
+    text-align: center;
 }
 
 main {
     background-color:#ebe5d5 ;
     padding: 15px 15px;
-    margin: 0px 50px;
+    margin: auto;
+    max-width: 1200px;
+    text-align: left;
+}
+
+footer{ 
+    background-color: #8f6c49 ;
 }
 
 /* Muistutuksena 
