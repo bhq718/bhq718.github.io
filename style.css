@@ -1,13 +1,15 @@
-head {
-    background-color:#fcfcf0 ;
-}
 
 body {
- background-color: #ebe5d5 ;
+ background-color: #fcfcf0 ;
  color: #4a3432 ;
  text-emphasis-color: #e07e3d ;
 }
 
+main {
+    background-color:#ebe5d5 ;
+    padding: 15px 15px;
+    margin: 0px 50px;
+}
 
 /* Muistutuksena 
 @media only screen (max-width:260px); */
