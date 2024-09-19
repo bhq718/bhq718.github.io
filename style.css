@@ -1,4 +1,12 @@
-body {
-
+head {
+    background-color:#fcfcf0 ;
 }
 
+body {
+ background-color: #ebe5d5 ;
+ color: #4a3432 ;
+ text-emphasis-color: #e07e3d ;
+}
+
+/* Muistutuksena 
+@media only screen (max-width:260px);
