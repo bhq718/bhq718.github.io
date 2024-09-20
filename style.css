@@ -1,0 +1,86 @@
+
+header{
+    background-color: #e07e3d;
+    text-align: left;
+}
+
+#logo {
+    max-width: 200px;
+}
+
+body {
+    background-color: #fcfcf0 ;
+    color: #4a3432 ;
+    text-emphasis-color: #e07e3d ;
+    text-align: center;
+}
+
+
+main {
+    background-color:#ebe5d5 ;
+    padding: 15px 15px;
+    margin: auto;
+    max-width: 1200px;
+    text-align: left;
+}
+
+footer{ 
+    background-color: #8f6c49 ;
+}
+
+/* Muistutuksena 
+@media only screen (max-width:260px); */
+
+/* Fontit */
+.roboto-light {
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", system-ui;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .open-sans-regular {
+    font-family: "Open Sans", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+
+  }
+  
+  .nerko-one-regular {
+    font-family: "Nerko One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+    
