@@ -11,128 +11,302 @@
 
     <title>CaliCafé - Gluteenitonta herkuttelua</title>
     <style>
-* {
+
+        /* Color reference */
+        /*
+        #4a3432 - Text color
+        #8f6c49 - Footer background
+        #e07e3d - Header/links background
+        #ebe5d5 - Main background
+        #fcfcf0 - Body background
+        */
+
+        * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box; /* Include padding and border in element's total width and height */
-        }
-       
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #fcfcf0; /* Background color for the body */
-    color: #4a3432; /* Text color */
-    text-align: center; /* Center text */
-}
-
-header {
-    display: flex; /* Flexbox for alignment */
-    justify-content:space-evenly; /* Space between logo and links */
-    align-items: center; /* Center items */
-    position: fixed; /* Fixed position */
-    width: 100%; /* Full width */
-    max-width: 835px;
-    background-image: url('kuvat/header.png');
-    background-size: cover; /* Ensures the image covers the whole header */
-    background-position: center; /* Centers the image */
-    top: 0; /* Align to the top */
-    left: 0; /* Ensure it starts from the left */
-    color: #4a3432; /* Header text color */
-    z-index: 1000; /* Ensure header is above other content */
-}
-
-#logo {
-    max-width: 150px; /* Max width for the logo */
-    height: auto; /* Maintain aspect ratio */
-}
-
-a {
-    color: white; /* Link color */
-    text-decoration: none; /* Remove underline */
-    padding: 14px 20px; /* Padding for links */
-}
-
-a:hover {
-    color: #4a3432; /* Text color on hover */
-    text-decoration: underline; /* Underline on hover */
-}
-
-.nav-links {
-    display: flex; /* Default display for larger screens */
-    flex-grow: 1; /* Allow links to grow */
-    justify-content: flex-end; /* Align links to the right */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-}
-
-        .toggle-button {
-            display: none; /* Hidden by default */
-            background-color: #333; /* Button background color */
-            color: white; /* Button text color */
-            border: none; /* No border */
-            padding: 14px; /* Padding for button */
-            cursor: pointer; /* Cursor style */
+            box-sizing: border-box;
         }
 
+        html {
+        scroll-behavior: smooth;
+        }   
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            position: relative;
+            background-color: #fcfcf0;
+            color: #4a3432;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            height: 130px;
+            background-image: url('kuvat/header.png');
+            background-repeat: no-repeat;
+            background-position: top;
+            background-attachment: fixed;
+            z-index: 1000;
+            font-family: "Nerko One", system-ui;
+            font-size: 30px;
+            text-shadow: 2px 2px #4a3432;
+        }
+
+        h1{
+            font-family: "Nerko One", system-ui;
+            font-size: 35px;
+            text-shadow: 2px 2px #e07e3d;
+        }
+
+        h2{
+            font-family: "Nerko One", system-ui;
+            font-size: 30px;
+        }
+
+        h3{
+            font-family: "Nerko One", system-ui;
+            font-size: 25px;
+        }
+        
         main {
-            background-color: #ebe5d5; /* Main background color */
-            padding: 12% 15px 15px; /* Padding for the main section */
-            margin: auto; /* Center the main section */
-            max-width: 80%; /* Max width for main content */
-            text-align: left; /* Align text to the left */
+            background-color: #ebe5d5;
+            font-family: "Roboto", system-ui;
+            font-size: 16px;
+            padding: 125px 35px 150px 20px;
+            margin: auto;
+            max-width: 1000px;
+            text-align: left;
+            position: relative;
+        }
+    
+        .menu-table{
+            width: 100%;
+            border: 1px solid black ;
+            border-collapse: collapse;
+            border-spacing: 30px;
+            margin-left: 10px;
+        }
+        th {
+        width: 50%;
+            background-color: #e07e3d ;
+            opacity: 80%;
+        color: #4a3432;
+        }
+
+        td{
+            border-bottom: 2px solid;
         }
 
         footer {
-            background-color: #8f6c49; /* Footer background color */
-            padding: 10px; /* Padding for footer */
-            color: white; /* Footer text color */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 150px;
+            background-image: url('Kuvat/footer.png');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-attachment: fixed;
+            z-index: 1000;
+            color: #ebe5d5;
+            text-align: center;
+        }
+        #footer-text {
+            position: absolute;
+            bottom: 10px;
+        }
+
+        #logo {
+            max-width: 100%;
+        }
+
+        a {
+            color: #ebe5d5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #4a3432;
+            text-decoration: underline;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-grow: 1;
+            justify-content:space-evenly;
+            max-width: 1000px;
+            margin-top: -45px;
+        }
+
+        .toggle-button {
+            display: none;
+            background-color: #e07e3d;
+            color: white;
+            border: none;
+            padding: 14px;
+            cursor: pointer;
         }
 
         @media (max-width: 600px) {
             .nav-links {
-                display: none; /* Hide links by default on mobile */
-                flex-direction: column; /* Stack links vertically */
-                width: 100%; /* Full width */
-                position: absolute; /* Position below the header */
-                background-color: #333; /* Background color for dropdown */
-                top: 60px; /* Position below the navbar */
-                left: 0; /* Align to the left */
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                background-color: #e07e3d;
+                top: 60px;
+                left: 0;
             }
 
             .toggle-button {
-                display: block; /* Show toggle button on mobile */
+                display: block;
+                position: absolute; /* Position it absolutely */
+                right: 20px; /* Move it to the right */
+                top: 20px; /* Move it down from the top */
+                z-index: 1000;
+                font-size: xx-large;
             }
 
             .nav-links.active {
-                display: flex; /* Show links when active */
+                display: flex;
+            }
+
+            #logo{
+                display: none;
+            }
+
+            #logo-mobile {
+                display: block;
+                position: absolute; /* Position it absolutely */
+                left: 20px; /* Move it to the right */
+                top: 20px; /* Move it down from the top */
+            }
+
+        }
+        @media (min-width:600px) {
+            #logo-mobile{
+                display: none;
             }
         }
+
 
     </style>
 </head>
 <body>
 
 <header>
-    <img id="logo" src="kuvat/calico.png" alt="Simppeli illustraatio calico kissasta istumassa">
-    
+    <img id="logo-mobile" src="kuvat/logo.png" alt="Simppeli illustraatio calico kissasta istumassa">
+
     <button class="toggle-button" id="toggle-button">☰</button>
+
     <div class="nav-links" id="nav-links">
+        <img id="logo" src="kuvat/logo.png" alt="Simppeli illustraatio calico kissasta istumassa">
         <a href="index.html">Etusivu</a>
-        <a href="index.html">Menu</a>
+        <a href="index.html#menu">Menu</a>
         <a href="Kissamme.html">Kissamme</a>
         <a href="yhteystiedot.html">Yhteystiedot</a>
     </div>
+
 </header>
 
 <main>
     <h1>Eka otsikko</h1>
+    <br>
     <p>Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Käymällä kahvilassamme tuet myös kissojen ja eläinten suojelutyötä. Lahjoitamme osan tuotostamme eläintensuojeluyhdistyksille ja teemme yhteistyötä paikallisten eläintensuojeluyhdistysten kanssa.</p>
-
-    <h1>MENU</h1>
+    <br>
+    <p>Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Käymällä kahvilassamme tuet myös kissojen ja eläinten suojelutyötä. Lahjoitamme osan tuotostamme eläintensuojeluyhdistyksille ja teemme yhteistyötä paikallisten eläintensuojeluyhdistysten kanssa.</p>
+    <br>
+    <p>Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Käymällä kahvilassamme tuet myös kissojen ja eläinten suojelutyötä. Lahjoitamme osan tuotostamme eläintensuojeluyhdistyksille ja teemme yhteistyötä paikallisten eläintensuojeluyhdistysten kanssa.</p>
+<br>
+<hr>
+<br>
+    <h1 id="menu">MENU</h1>
+    <br>
     <p>Leivomme itse kaikki syötävämme paikan päällä gluteenittomista jauhoista.</p>
+    <br>
+    <table class="menu-table">
+        <thead>
+            <tr>
+                <th>Kategoria</th>
+                <th>Tuote</th>
+                <th>Hinta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juomat</td>
+                <td>Kahvi</td>
+                <td>2€</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Tee</td>
+                <td>2€</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Kaakao</td>
+                <td>2€</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Latte</td>
+                <td>4€</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Limu</td>
+                <td>2,5€</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Mehu</td>
+                <td>1€</td>
+            </tr>
+            <tr>
+                <td>Syötävät</td>
+                <td>Suolainen Piirakka</td>
+                <td>4€</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Makea Piirakka</td>
+                <td>4€</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Täytetty Leipä</td>
+                <td>4€</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Kuppikakku</td>
+                <td>3€</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Kakkupala</td>
+                <td>4€</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Keksi</td>
+                <td>1€</td>
+            </tr>
+        </tbody>
+    </table>
 </main>
 
 <footer>
-    Footerin informaatio tulee tänne
+    <p id="footer-text">Gluteenittomalla herkuttelulla hyvää karvakavereille!</p>
+    <p id="footer-text">© Ryhmä E 2024</p>
 </footer>
 
 <script>
@@ -140,7 +314,7 @@ a:hover {
     const navLinks = document.getElementById('nav-links');
 
     toggleButton.addEventListener('click', () => {
-        navLinks.classList.toggle('active'); // Toggle the 'active' class
+        navLinks.classList.toggle('active');
     });
 </script>
 
