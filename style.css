@@ -8,6 +8,24 @@ header{
     max-width: 200px;
 }
 
+nav {
+  color: #4a3432 ;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav a {
+  color: #4a3432 ;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 body {
     background-color: #fcfcf0 ;
     color: #4a3432 ;
@@ -18,9 +36,9 @@ body {
 
 main {
     background-color:#ebe5d5 ;
-    padding: 15px 15px;
+    padding: 12% 15px 15px 15px;
     margin: auto;
-    max-width: 1200px;
+    max-width: 80%;
     text-align: left;
 }
 
@@ -83,4 +101,8 @@ footer{
     font-weight: 400;
     font-style: normal;
   }
+
+   
     
+  }
+  

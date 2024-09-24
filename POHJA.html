@@ -11,14 +11,80 @@
   <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
   <title>CaliCafé - Gluteenitonta herkuttelua</title>
+  <style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+
+    }
+    header {
+        display: flex; /* Flexbox for alignment */
+        justify-content: space-between; /* Space between logo and links */
+        align-items: center; /* Center items vertically */
+        padding: 10px; /* Padding around the header */
+    }
+    header img {
+        height: 50px; /* Set logo height */
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px; /* Padding for links */
+    }
+    a:hover {
+        background-color: #ddd; /* Background color on hover */
+        color: black; /* Text color on hover */
+    }
+    .toggle-button {
+        display: none; /* Hidden by default */
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 14px;
+        cursor: pointer;
+    }
+    .nav-links {
+        display: flex; /* Default display for larger screens */
+        flex-grow: 1; /* Allow links to grow */
+        justify-content: flex-end; /* Align links to the right */
+    }
+    @media (max-width: 600px) {
+        .nav-links {
+            display: none; /* Hide links by default on mobile */
+            flex-direction: column; /* Stack links vertically */
+            width: 100%; /* Full width */
+            position: absolute; /* Position below the header */
+            background-color: #333; /* Background color for dropdown */
+            top: 60px; /* Position below the navbar */
+            left: 0; /* Align to the left */
+        }
+        .toggle-button {
+            display: block; /* Show toggle button on mobile */
+        }
+        .nav-links.active {
+            display: flex; /* Show links when active */
+        }
+    }
+</style>
 </head>
 <body>
 
-  
+<nav>
   <header>
-    <img id="logo" src="calico.png" alt="Simppeli illustraatio calico kissasta istumassa">
-    Navigaation lokaatio tulee tänne
+    <img id="logo" src="kuvat/calico.png" alt="Simppeli illustraatio calico kissasta istumassa">
+    
+    <button class="toggle-button" id="toggle-button">☰</button>
+    <div class="nav-links" id="nav-links">
+        <a href="index.html">Etusivu</a>
+        <a href="#menu">Menu</a>
+        <a href="Kissamme.html">Kissamme</a>
+        <a href="yhteystiedot.html">Yhteystiedot</a>
+    </div>
   </header>
+</nav>
 
 <main>
   <h1>Eka otsikko</h1>
@@ -26,13 +92,21 @@
 
   <h1> MENU</h1>
   <p>Leivomme itse kaikki syötävämme paikan päällä gluteenittomista jauhoista. </p>
-
+  <br>
 </main>
 
-  <footer>
-    Footerin informaatio tulee tänne
-  </footer>
+<footer>
+  Footerin informaatio tulee tänne
+</footer>
 
-  <script src="scripts.js"></script>
+<script>
+    const toggleButton = document.getElementById('toggle-button');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active'); // Toggle the 'active' class
+    });
+</script>
+
 </body>
 </html>

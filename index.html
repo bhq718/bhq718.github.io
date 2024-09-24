@@ -9,24 +9,59 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+#table1{
+    width: 100%;
+    border: 1px solid black ;
+    border-collapse: collapse;
+    border-spacing: 30px;
+   
+}
+#table2{
+    width: 100%;
+    border: 1px solid black ;
+    border-collapse: collapse;
+    border-spacing: 30px;
+    margin-top: 20px;
+    float: right;
+}
+th {
+  width: 50%;
+    background-color: #e07e3d ;
+    opacity: 80%;
+  color: #4a3432;
+}
+td{
+    border-bottom: 2px solid;
+
+
+}
+
+  </style>
 
   <title>CaliCafé - Gluteenitonta herkuttelua</title>
 </head>
 <body>
 
   
-  <header>
-    <img id="logo" src="calico.png" alt="Simppeli illustraatio calico kissasta istumassa">
-    Navigaation lokaatio tulee tänne
-  </header>
-
+  <nav>
+    <header>
+      <img id="logo" src="kuvat/calico.png" alt="Simppeli illustraatio calico kissasta istumassa">
+      
+          <a href="index.html">Etusivu</a>
+          <a href="#menu">Menu</a>
+          <a href="Kissamme.html">Kissamme</a>
+          <a href="yhteystiedot.html">Yhteystiedot</a>
+    </header>
+  </nav>
 <main>
   <h1>Eka otsikko</h1>
   <p> Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Käymällä kahvilassamme tuet myös kissojen ja eläinten suojelutyötä. Lahjoitamme osan tuotostamme eläintensuojeluyhdistyksille ja teemme yhteistyötä paikallisten eläintensuojeluyhdistysten kanssa. </p>
 
-  <h1> MENU</h1>
+  <h1 id="menu"> MENU</h1>
   <p>Leivomme itse kaikki syötävämme paikan päällä gluteenittomista jauhoista. </p>
-  <table>
+ <div>
+  <table id="table1">
     <tr>
       <th>Juomat</th>
       <th>Hinta</th>
@@ -56,10 +91,44 @@
         <td>1€</td>
     </tr>
   </table>
+</div>
+<div>
+  <table id="table2">
+    <tr>
+      <th>Syötävät</th>
+      <th>Hinta</th>
+    </tr>
+    <tr>
+      <td>Suolainen Piirakka</td>
+      <td>4€</td>
+    </tr>
+    <tr>
+      <td>Makea Piirakka</td>
+      <td>4€</td>
+    </tr>
+    <tr>
+        <td>Täytetty Leipä</td>
+        <td>4€</td>
+    </tr>
+    <tr>
+        <td>Kuppikakku</td>
+        <td>3€</td>
+    </tr>
+    <tr>
+        <td>Kakkupala</td>
+        <td>4€</td>
+    </tr>
+    <tr>
+        <td>Keksi</td>
+        <td>1€</td>
+    </tr>
+  </table>
+</div>
 </main>
 
   <footer>
-    Footerin informaatio tulee tänne
+    Nautiskelemalla gluteiinittomasti hyvää karvakamuille 
+
   </footer>
 
   <script src="scripts.js"></script>
