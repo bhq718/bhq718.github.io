@@ -1,80 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gluteenittomalla herkuttelulla hyvää karvakavereille!">
-  <meta name="keywords" content="Kahvila, kissat, leivokset, gluteeniton">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gluteenittomalla herkuttelulla hyvää karvakavereille!">
+    <meta name="keywords" content="Kahvila, kissat, leivokset, gluteeniton">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
-  <title>CaliCafé - Gluteenitonta herkuttelua</title>
-  <style>
-    body {
-        font-family: 'Open Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-   
-    header {
-        display: flex; /* Flexbox for alignment */
-        justify-content: space-between; /* between logo and links */
-        align-items: center; /* Center items */
-        padding: 10px; /* around the header */
-    }
-    header img {
-        height: 100px; /* logo korkeus */
-    }
-
-    a {
-        color: white;
-        text-decoration: none;
-        padding: 14px 20px; /* for links */
-    }
-    a:hover {
-        /*background-color: #ddd; /* Background color on hover */
-        color: black; /* Text color on hover */
-    }
-
-    .toggle-button {
-        display: none; /* Hidden by default */
-        background-color: #333;
-        color: white;
-        border: none;
-        padding: 14px;
-        cursor: pointer;
-    }
-    .nav-links {
-        display: flex; /* Default display for larger screens */
-        flex-grow: 1; /* Allow links to grow */
-        justify-content: flex-end; /* Align links to the right */
-    }
-    
-    @media (max-width: 600px) {
-        .nav-links {
-            display: none; /* Hide links by default on mobile */
-            flex-direction: column; /* Stack links vertically */
-            width: 100%; /* Full width */
-            position: absolute; /* Position below the header */
-            background-color: #333; /* Background color for dropdown */
-            top: 60px; /* Position below the navbar */
-            left: 0; /* Align to the left */
+    <title>CaliCafé - Gluteenitonta herkuttelua</title>
+    <style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
         }
+       
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fcfcf0; /* Background color for the body */
+    color: #4a3432; /* Text color */
+    text-align: center; /* Center text */
+}
+
+header {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center items */
+    background-color: #e07e3d; /* Header background color */
+    position: fixed; /* Fixed position */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    left: 0; /* Ensure it starts from the left */
+    color: #4a3432; /* Header text color */
+    padding: 10px 15px; /* Padding inside the header */
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+#logo {
+    max-width: 150px; /* Max width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 14px 20px; /* Padding for links */
+}
+
+a:hover {
+    color: #4a3432; /* Text color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.nav-links {
+    display: flex; /* Default display for larger screens */
+    flex-grow: 1; /* Allow links to grow */
+    justify-content: flex-end; /* Align links to the right */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
         .toggle-button {
-            display: block; /* Show toggle button on mobile */
+            display: none; /* Hidden by default */
+            background-color: #333; /* Button background color */
+            color: white; /* Button text color */
+            border: none; /* No border */
+            padding: 14px; /* Padding for button */
+            cursor: pointer; /* Cursor style */
         }
-        .nav-links.active {
-            display: flex; /* Show links when active */
+
+        main {
+            background-color: #ebe5d5; /* Main background color */
+            padding: 12% 15px 15px; /* Padding for the main section */
+            margin: auto; /* Center the main section */
+            max-width: 80%; /* Max width for main content */
+            text-align: left; /* Align text to the left */
         }
-    }
-</style>
+
+        footer {
+            background-color: #8f6c49; /* Footer background color */
+            padding: 10px; /* Padding for footer */
+            color: white; /* Footer text color */
+        }
+
+        @media (max-width: 600px) {
+            .nav-links {
+                display: none; /* Hide links by default on mobile */
+                flex-direction: column; /* Stack links vertically */
+                width: 100%; /* Full width */
+                position: absolute; /* Position below the header */
+                background-color: #333; /* Background color for dropdown */
+                top: 60px; /* Position below the navbar */
+                left: 0; /* Align to the left */
+            }
+
+            .toggle-button {
+                display: block; /* Show toggle button on mobile */
+            }
+
+            .nav-links.active {
+                display: flex; /* Show links when active */
+            }
+        }
+    </style>
 </head>
 <body>
 
-<nav>
-  <header>
+<header>
     <img id="logo" src="kuvat/calico.png" alt="Simppeli illustraatio calico kissasta istumassa">
     
     <button class="toggle-button" id="toggle-button">☰</button>
@@ -84,20 +119,18 @@
         <a href="Kissamme.html">Kissamme</a>
         <a href="yhteystiedot.html">Yhteystiedot</a>
     </div>
-  </header>
-</nav>
+</header>
 
 <main>
-  <h1>Eka otsikko</h1>
-  <p> Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Käymällä kahvilassamme tuet myös kissojen ja eläinten suojelutyötä. Lahjoitamme osan tuotostamme eläintensuojeluyhdistyksille ja teemme yhteistyötä paikallisten eläintensuojeluyhdistysten kanssa. </p>
+    <h1>Eka otsikko</h1>
+    <p>Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Käymällä kahvilassamme tuet myös kissojen ja eläinten suojelutyötä. Lahjoitamme osan tuotostamme eläintensuojeluyhdistyksille ja teemme yhteistyötä paikallisten eläintensuojeluyhdistysten kanssa.</p>
 
-  <h1> MENU</h1>
-  <p>Leivomme itse kaikki syötävämme paikan päällä gluteenittomista jauhoista. </p>
-  <br>
+    <h1>MENU</h1>
+    <p>Leivomme itse kaikki syötävämme paikan päällä gluteenittomista jauhoista.</p>
 </main>
 
 <footer>
-  Footerin informaatio tulee tänne
+    Footerin informaatio tulee tänne
 </footer>
 
 <script>
