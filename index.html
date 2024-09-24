@@ -54,16 +54,29 @@ td{
 <body>
 
   
-  <nav>
-    <header>
-      <img id="logo" src="kuvat/calico.png" alt="Simppeli illustraatio calico kissasta istumassa">
-      
-          <a href="index.html">Etusivu</a>
-          <a href="#menu">Menu</a>
-          <a href="Kissamme.html">Kissamme</a>
-          <a href="yhteystiedot.html">Yhteystiedot</a>
-    </header>
-  </nav>
+  <header>
+    <img
+        id="logo-mobile"
+        src="kuvat/logo.png"
+        alt="Simppeli illustraatio calico kissasta istumassa"
+    />
+    <p id="calicafe">CaliCafé</p>
+
+    <button class="toggle-button" id="toggle-button">☰</button>
+
+    <div class="nav-links" id="nav-links">
+        <img
+            id="logo"
+            src="kuvat/logo.png"
+            alt="Simppeli illustraatio calico kissasta istumassa"
+        />
+        <a href="index.html">Etusivu</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="Kissamme.html">Kissamme</a>
+        <a href="yhteystiedot.html">Yhteystiedot</a>
+    </div>
+</header>
+
 <main>
   <h1>Eka otsikko</h1>
   <p> Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Teemme yhteistyötä paikallisten eläinsuojeluyhdistysten kanssa ja lahjoitamme osan tuotoistamme eläinten suojeluun. Käymällä kahvilassamme tuet siis eläintensuojelutyötä. </p>
@@ -134,10 +147,18 @@ td{
 </div>
 </main>
 
-  <footer>
-    Nautiskelemalla gluteiinittomasti hyvää karvakamuille 
+<footer>
+  <p>Gluteenittomalla herkuttelulla hyvää karvakavereille!</p>
+  <p>© Ryhmä E 2024</p>
+</footer>
+<script>
+  const toggleButton = document.getElementById('toggle-button');
+  const navLinks = document.getElementById('nav-links');
 
-  </footer>
+  toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+  });
+</script>
 
   <script src="scripts.js"></script>
 </body>

@@ -1,322 +1,193 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gluteenittomalla herkuttelulla hyvää karvakavereille!">
-    <meta name="keywords" content="Kahvila, kissat, leivokset, gluteeniton">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta
+            name="description"
+            content="Gluteenittomalla herkuttelulla hyvää karvakavereille!"/>
+        <meta
+            name="keywords"
+            content="Kahvila, kissat, leivokset, gluteeniton"/>
 
-    <title>CaliCafé - Gluteenitonta herkuttelua</title>
-    <style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet"/>
 
-        /* Color reference */
-        /*
-        #4a3432 - Text color
-        #8f6c49 - Footer background
-        #e07e3d - Header/links background
-        #ebe5d5 - Main background
-        #fcfcf0 - Body background
-        */
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-        scroll-behavior: smooth;
-        }   
-
-        html, body {
-            height: 100%;
-        }
-
-        body {
-            position: relative;
-            background-color: #fcfcf0;
-            color: #4a3432;
-            text-align: center;
-        }
-
-        header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            height: 130px;
-            background-image: url('kuvat/header.png');
-            background-repeat: no-repeat;
-            background-position: top;
-            background-attachment: fixed;
-            z-index: 1000;
-            font-family: "Nerko One", system-ui;
-            font-size: 30px;
-            text-shadow: 2px 2px #4a3432;
-        }
-
-        h1{
-            font-family: "Nerko One", system-ui;
-            font-size: 35px;
-            text-shadow: 2px 2px #e07e3d;
-        }
-
-        h2{
-            font-family: "Nerko One", system-ui;
-            font-size: 30px;
-        }
-
-        h3{
-            font-family: "Nerko One", system-ui;
-            font-size: 25px;
-        }
-        
-        main {
-            background-color: #ebe5d5;
-            font-family: "Roboto", system-ui;
-            font-size: 16px;
-            padding: 125px 35px 150px 20px;
-            margin: auto;
-            max-width: 1000px;
-            text-align: left;
-            position: relative;
-        }
-    
-        .menu-table{
-            width: 100%;
-            border: 1px solid black ;
-            border-collapse: collapse;
-            border-spacing: 30px;
-            margin-left: 10px;
-        }
-        th {
-        width: 50%;
-            background-color: #e07e3d ;
-            opacity: 80%;
-        color: #4a3432;
-        }
-
-        td{
-            border-bottom: 2px solid;
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            height: 150px;
-            background-image: url('Kuvat/footer.png');
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-attachment: fixed;
-            z-index: 1000;
-            color: #ebe5d5;
-            text-align: center;
-        }
-        #footer-text {
-            position: absolute;
-            bottom: 10px;
-        }
-
-        #logo {
-            max-width: 100%;
-        }
-
-        a {
-            color: #ebe5d5;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #4a3432;
-            text-decoration: underline;
-        }
-
-        .nav-links {
-            display: flex;
-            flex-grow: 1;
-            justify-content:space-evenly;
-            max-width: 1000px;
-            margin-top: -45px;
-        }
-
-        .toggle-button {
-            display: none;
-            background-color: #e07e3d;
-            color: white;
-            border: none;
-            padding: 14px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 600px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
+        <title>CaliCafé - Gluteenitonta herkuttelua</title>
+        <style>
+            .menu-table {
                 width: 100%;
-                position: absolute;
+                border: 1px solid black;
+                border-collapse: collapse;
+                border-spacing: 30px;
+                margin-left: 10px;
+            }
+            th {
+                width: 50%;
                 background-color: #e07e3d;
-                top: 60px;
-                left: 0;
+                opacity: 80%;
+                color: #4a3432;
             }
 
-            .toggle-button {
-                display: block;
-                position: absolute; /* Position it absolutely */
-                right: 20px; /* Move it to the right */
-                top: 20px; /* Move it down from the top */
-                z-index: 1000;
-                font-size: xx-large;
+            td {
+                border-bottom: 2px solid;
             }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img
+                id="logo-mobile"
+                src="kuvat/logo.png"
+                alt="Simppeli illustraatio calico kissasta istumassa"
+            />
+            <p id="calicafe">CaliCafé</p>
 
-            .nav-links.active {
-                display: flex;
-            }
+            <button class="toggle-button" id="toggle-button">☰</button>
 
-            #logo{
-                display: none;
-            }
+            <div class="nav-links" id="nav-links">
+                <img
+                    id="logo"
+                    src="kuvat/logo.png"
+                    alt="Simppeli illustraatio calico kissasta istumassa"
+                />
+                <a href="index.html">Etusivu</a>
+                <a href="index.html#menu">Menu</a>
+                <a href="Kissamme.html">Kissamme</a>
+                <a href="yhteystiedot.html">Yhteystiedot</a>
+            </div>
+        </header>
 
-            #logo-mobile {
-                display: block;
-                position: absolute; /* Position it absolutely */
-                left: 20px; /* Move it to the right */
-                top: 20px; /* Move it down from the top */
-            }
+        <main>
+            <h1>Eka otsikko</h1>
+            <br />
+            <p>
+                Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan.
+                Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä
+                löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka
+                missiona on myös eläintensuojelu. Käymällä kahvilassamme tuet
+                myös kissojen ja eläinten suojelutyötä. Lahjoitamme osan
+                tuotostamme eläintensuojeluyhdistyksille ja teemme yhteistyötä
+                paikallisten eläintensuojeluyhdistysten kanssa.
+            </p>
+            <br />
+            <p>
+                Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan.
+                Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä
+                löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka
+                missiona on myös eläintensuojelu. Käymällä kahvilassamme tuet
+                myös kissojen ja eläinten suojelutyötä. Lahjoitamme osan
+                tuotostamme eläintensuojeluyhdistyksille ja teemme yhteistyötä
+                paikallisten eläintensuojeluyhdistysten kanssa.
+            </p>
+            <br />
+            <p>
+                Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan.
+                Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä
+                löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka
+                missiona on myös eläintensuojelu. Käymällä kahvilassamme tuet
+                myös kissojen ja eläinten suojelutyötä. Lahjoitamme osan
+                tuotostamme eläintensuojeluyhdistyksille ja teemme yhteistyötä
+                paikallisten eläintensuojeluyhdistysten kanssa.
+            </p>
+            <br />
+            <hr />
+            <br />
+            <h1 id="menu">MENU</h1>
+            <br />
+            <p>
+                Leivomme itse kaikki syötävämme paikan päällä gluteenittomista
+                jauhoista.
+            </p>
+            <br />
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Kategoria</th>
+                        <th>Tuote</th>
+                        <th>Hinta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juomat</td>
+                        <td>Kahvi</td>
+                        <td>2€</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tee</td>
+                        <td>2€</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kaakao</td>
+                        <td>2€</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Latte</td>
+                        <td>4€</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Limu</td>
+                        <td>2,5€</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mehu</td>
+                        <td>1€</td>
+                    </tr>
+                    <tr>
+                        <td>Syötävät</td>
+                        <td>Suolainen Piirakka</td>
+                        <td>4€</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Makea Piirakka</td>
+                        <td>4€</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Täytetty Leipä</td>
+                        <td>4€</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kuppikakku</td>
+                        <td>3€</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kakkupala</td>
+                        <td>4€</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Keksi</td>
+                        <td>1€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
 
-        }
-        @media (min-width:600px) {
-            #logo-mobile{
-                display: none;
-            }
-        }
+        <footer>
+            <p>Gluteenittomalla herkuttelulla hyvää karvakavereille!</p>
+            <p>© Ryhmä E 2024</p>
+        </footer>
 
+        <script>
+            const toggleButton = document.getElementById('toggle-button');
+            const navLinks = document.getElementById('nav-links');
 
-    </style>
-</head>
-<body>
-
-<header>
-    <img id="logo-mobile" src="kuvat/logo.png" alt="Simppeli illustraatio calico kissasta istumassa">
-
-    <button class="toggle-button" id="toggle-button">☰</button>
-
-    <div class="nav-links" id="nav-links">
-        <img id="logo" src="kuvat/logo.png" alt="Simppeli illustraatio calico kissasta istumassa">
-        <a href="index.html">Etusivu</a>
-        <a href="index.html#menu">Menu</a>
-        <a href="Kissamme.html">Kissamme</a>
-        <a href="yhteystiedot.html">Yhteystiedot</a>
-    </div>
-
-</header>
-
-<main>
-    <h1>Eka otsikko</h1>
-    <br>
-    <p>Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Käymällä kahvilassamme tuet myös kissojen ja eläinten suojelutyötä. Lahjoitamme osan tuotostamme eläintensuojeluyhdistyksille ja teemme yhteistyötä paikallisten eläintensuojeluyhdistysten kanssa.</p>
-    <br>
-    <p>Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Käymällä kahvilassamme tuet myös kissojen ja eläinten suojelutyötä. Lahjoitamme osan tuotostamme eläintensuojeluyhdistyksille ja teemme yhteistyötä paikallisten eläintensuojeluyhdistysten kanssa.</p>
-    <br>
-    <p>Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Käymällä kahvilassamme tuet myös kissojen ja eläinten suojelutyötä. Lahjoitamme osan tuotostamme eläintensuojeluyhdistyksille ja teemme yhteistyötä paikallisten eläintensuojeluyhdistysten kanssa.</p>
-<br>
-<hr>
-<br>
-    <h1 id="menu">MENU</h1>
-    <br>
-    <p>Leivomme itse kaikki syötävämme paikan päällä gluteenittomista jauhoista.</p>
-    <br>
-    <table class="menu-table">
-        <thead>
-            <tr>
-                <th>Kategoria</th>
-                <th>Tuote</th>
-                <th>Hinta</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Juomat</td>
-                <td>Kahvi</td>
-                <td>2€</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Tee</td>
-                <td>2€</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Kaakao</td>
-                <td>2€</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Latte</td>
-                <td>4€</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Limu</td>
-                <td>2,5€</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Mehu</td>
-                <td>1€</td>
-            </tr>
-            <tr>
-                <td>Syötävät</td>
-                <td>Suolainen Piirakka</td>
-                <td>4€</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Makea Piirakka</td>
-                <td>4€</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Täytetty Leipä</td>
-                <td>4€</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Kuppikakku</td>
-                <td>3€</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Kakkupala</td>
-                <td>4€</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Keksi</td>
-                <td>1€</td>
-            </tr>
-        </tbody>
-    </table>
-</main>
-
-<footer>
-    <p id="footer-text">Gluteenittomalla herkuttelulla hyvää karvakavereille!</p>
-    <p id="footer-text">© Ryhmä E 2024</p>
-</footer>
-
-<script>
-    const toggleButton = document.getElementById('toggle-button');
-    const navLinks = document.getElementById('nav-links');
-
-    toggleButton.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-</script>
-
-</body>
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
+    </body>
 </html>
