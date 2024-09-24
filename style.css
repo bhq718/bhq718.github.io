@@ -36,9 +36,9 @@ body {
 
 main {
     background-color:#ebe5d5 ;
-    padding: 250px 15px 15px 15px;
+    padding: 12% 15px 15px 15px;
     margin: auto;
-    max-width: 1200px;
+    max-width: 80%;
     text-align: left;
 }
 
