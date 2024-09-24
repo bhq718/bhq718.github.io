@@ -17,27 +17,27 @@
         margin: 0;
         padding: 0;
     }
-    nav {
-
-    }
+   
     header {
         display: flex; /* Flexbox for alignment */
-        justify-content: space-between; /* Space between logo and links */
-        align-items: center; /* Center items vertically */
-        padding: 10px; /* Padding around the header */
+        justify-content: space-between; /* between logo and links */
+        align-items: center; /* Center items */
+        padding: 10px; /* around the header */
     }
     header img {
-        height: 50px; /* Set logo height */
+        height: 100px; /* logo korkeus */
     }
+
     a {
         color: white;
         text-decoration: none;
-        padding: 14px 20px; /* Padding for links */
+        padding: 14px 20px; /* for links */
     }
     a:hover {
-        background-color: #ddd; /* Background color on hover */
+        /*background-color: #ddd; /* Background color on hover */
         color: black; /* Text color on hover */
     }
+
     .toggle-button {
         display: none; /* Hidden by default */
         background-color: #333;
@@ -51,6 +51,7 @@
         flex-grow: 1; /* Allow links to grow */
         justify-content: flex-end; /* Align links to the right */
     }
+    
     @media (max-width: 600px) {
         .nav-links {
             display: none; /* Hide links by default on mobile */
