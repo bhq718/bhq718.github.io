@@ -25,10 +25,13 @@
 <main>
   <h1>Yhteystietomme</h1>
   <p> <br>Kahvilamme sijaitsee hyvien kulkuyhteyksien varrella,<br>kauppakeskus Triplan vierestä Pasilassa.<br><br>CaliCafe <br>Ratapihantie 13<br> 00520 Helsinki<br>Puh. 0400 123456 <br>kissakahvila@calicafe.com <br>123456-7 </p>
-  <img src="calicafemap.jpg" alt="kartta" usemap="#workmap" width="400">
+  <img src="kuvat/calicafemap.jpg" alt="kartta" usemap="#workmap" width="400">
   <map name="workmap">
     <area shape="rect" coords="34,44,432,346" alt="kahvilasijainti" href="https://maps.app.goo.gl/8N6eAbUUW9bcsYAC8">
   </map>
+ <!-- Ehkä tän kartan vois vaihtaa ihan vaan google mapsiin?? 
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63447.55837746316!2d24.78137649726561!3d60.20164850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469208606a60874b%3A0x50a651a72fbb180b!2sHaaga-Helia%20University%20of%20Applied%20Sciences%20-%20Pasila%20campus!5e0!3m2!1sen!2sfi!4v1727180593414!5m2!1sen!2sfi" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ -->
 
   <h1> Aukioloaikamme</h1>
   <p>Ma-La 10-19 <br>Su 12-17 </p>

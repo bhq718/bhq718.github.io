@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Gluteenittomalla herkuttelulla hyvää karvakavereille!">
     <meta name="keywords" content="Kahvila, kissat, leivokset, gluteeniton">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -27,17 +26,17 @@ body {
 
 header {
     display: flex; /* Flexbox for alignment */
-    justify-content: space-between; /* Space between logo and links */
+    justify-content: space-evenly; /* Space between logo and links */
     align-items: center; /* Center items */
-    background-color: #e07e3d; /* Header background color */
     position: fixed; /* Fixed position */
     width: 100%; /* Full width */
+    background-image: url('kuvat/Header.png')
     top: 0; /* Align to the top */
     left: 0; /* Ensure it starts from the left */
     color: #4a3432; /* Header text color */
-    padding: 10px 15px; /* Padding inside the header */
     z-index: 1000; /* Ensure header is above other content */
 }
+
 
 #logo {
     max-width: 150px; /* Max width for the logo */
@@ -105,6 +104,7 @@ a:hover {
                 display: flex; /* Show links when active */
             }
         }
+
     </style>
 </head>
 <body>
@@ -115,7 +115,7 @@ a:hover {
     <button class="toggle-button" id="toggle-button">☰</button>
     <div class="nav-links" id="nav-links">
         <a href="index.html">Etusivu</a>
-        <a href="#menu">Menu</a>
+        <a href="index.html">Menu</a>
         <a href="Kissamme.html">Kissamme</a>
         <a href="yhteystiedot.html">Yhteystiedot</a>
     </div>
