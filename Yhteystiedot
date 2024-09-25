@@ -47,7 +47,7 @@
 
 <main>
   <h1>Yhteystietomme</h1>
-  <p> <br>Kahvilamme sijaitsee hyvien kulkuyhteyksien varrella,<br>kauppakeskus Triplan vierestä Pasilassa.<br><br>CaliCafe <br>Ratapihantie 13<br> 00520 Helsinki<br>Puh. 0400 123456 <br>kissakahvila@calicafe.com <br>123456-7 </p>
+  <p> <br>Kahvilamme sijaitsee hyvien kulkuyhteyksien varrella, kauppakeskus Triplan vierestä Pasilassa.<br><br>CaliCafe <br>Ratapihantie 13<br> 00520 Helsinki<br>Puh. 0400 123456 <br>kissakahvila@calicafe.com <br>123456-7 </p>
   <img src="kuvat/calicafemap.jpg" alt="kartta" usemap="#workmap" width="400">
   <map name="workmap">
     <area shape="rect" coords="34,44,432,346" alt="kahvilasijainti" href="https://maps.app.goo.gl/8N6eAbUUW9bcsYAC8">
