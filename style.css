@@ -4,9 +4,13 @@
         #e07e3d - Header/links background
         #ebe5d5 - Main background
         #fcfcf0 - Body background
+        
+        Alinpana ennen fontteja on jokaiselle sivulle oma slotti stylelle, 
+        käyttäkää niitä kun viimeistelette sivuja jotta löytyy helposti sitten ongelmat jos niitä ilmenee!
+
         */
 
-    /* Global Styles */
+    /* Global Styles - ÄLÄ MUUTA */
     * {
       margin: 0;
       padding: 0;
@@ -29,7 +33,7 @@
       text-align: center;
     }
 
-    /* Header Styles */
+    /* Header Styles - ÄLÄ MUUTA */
     header {
       display: flex;
       justify-content: center;
@@ -48,7 +52,8 @@
       text-shadow: 2px 2px #4a3432;
     }
 
-    /* Heading Styles */
+    /* Heading Styles - Tarkista muut sivut ennenkuin lähdet tekemään muutoksia näihin, ettei muiden sivujen headerit mene rikki! 
+    Mieluiten muuta headerit classillä tai ID:llä */
     h1 {
       font-family: "Nerko One", system-ui;
       font-size: 35px;
@@ -65,7 +70,7 @@
       font-size: 25px;
     }
 
-    /* Main Content Styles */
+    /* Main Content Styles - ÄLÄ MUUTA */
     main {
       background-color: #ebe5d5;
       font-family: "Roboto", system-ui; 
@@ -77,7 +82,7 @@
       position: relative;
     }
 
-    /* Footer Styles */
+    /* Footer Styles - ÄLÄ MUUTA */
     footer {
       position: fixed;
       bottom: 0;
@@ -97,12 +102,12 @@
       letter-spacing: 1px;
     }
 
-    /* Image Styles */
+    /* logo Style */
     #logo {
       max-width: 100%;
     }
 
-    /* Link Styles */
+    /* Link Styles - ÄLÄ MUUTA*/
     a {
       color: #ebe5d5;
       text-decoration: none;
@@ -113,7 +118,7 @@
       text-decoration: underline;
     }
 
-    /* Navigation Links Styles */
+    /* Navigation Links Styles - ÄLÄ MUUTA*/
     .nav-links {
       display: flex;
       flex-grow: 1;
@@ -122,7 +127,7 @@
       margin-top: -45px;
     }
 
-    /* Toggle Button Styles */
+    /* Toggle Button Styles - ÄLÄ MUUTA*/
     .toggle-button {
       display: none;
       background-color: #e07e3d;
@@ -132,7 +137,7 @@
       cursor: pointer;
     }
 
-    /* Media Queries - eli responisiiviset stylet mobiilinäkymään */
+    /* Media Queries - eli responisiiviset stylet mobiilinäkymään - voit lisätä, mutta ÄLÄ MUUTA olemassa olevia */
     @media (max-width: 600px) {
       .nav-links {
           display: none;
@@ -197,7 +202,20 @@
       }
     }
 
-/* Fontit 
+/* Tähän alle INDEX sivun style */
+
+
+
+/* Tähän alle KISSAMME sivun style */
+
+
+
+/* Tähän alle YHTEYSTIEDOT sivun style */
+
+
+
+/* Fontit - Näistä voi kopioida itselleen fontin styleen jos se eroaa normaalista (roboto, 300, normal) 
+
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
