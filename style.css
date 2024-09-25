@@ -132,7 +132,7 @@
       cursor: pointer;
     }
 
-    /* Media Queries */
+    /* Media Queries - eli responisiiviset stylet mobiilinäkymään */
     @media (max-width: 600px) {
       .nav-links {
           display: none;
@@ -190,7 +190,8 @@
       }
     }
 
-    @media (min-width: 600px) {
+/* Jos mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
+    @media (min-width: 600px) { 
       #logo-mobile {
           display: none;
       }
@@ -199,10 +200,6 @@
           display: none;
       }
     }
-
-
-/* Muistutuksena 
-@media only screen (max-width:600px); */
 
 /* Fontit 
 .roboto-light {
