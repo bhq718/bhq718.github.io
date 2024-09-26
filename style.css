@@ -58,17 +58,21 @@
       font-family: "Nerko One", system-ui;
       font-size: 35px;
       text-shadow: 2px 2px #e07e3d;
+      letter-spacing: 2px;
     }
 
     h2 {
       font-family: "Nerko One", system-ui;
       font-size: 30px;
+      letter-spacing: 2px;
     }
 
     h3 {
       font-family: "Nerko One", system-ui;
       font-size: 25px;
+      letter-spacing: 2px;
     }
+    
 
     /* Main Content Styles - ÄLÄ MUUTA */
     main {
@@ -112,13 +116,17 @@
       color:#e07e3d;
       text-decoration: underline;
     }
+    
+    a:hover {
+      color: #4a3432;
+    }
 
     .nav-links a {
       color: #ebe5d5;
       text-decoration: none;
     }
 
-    a:hover {
+    .nav-links a:hover {
       color: #ebe5d5;
       text-decoration: underline;
     }
