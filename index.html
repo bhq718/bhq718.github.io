@@ -17,14 +17,14 @@
   <style>
     
 #table1{
-    width: 100%;
+    max-width: 200px;
     border: 1px solid black ;
     border-collapse: collapse;
     border-spacing: 30px;
    
 }
 #table2{
-    width: 100%;
+    max-width: 200px;
     border: 1px solid black ;
     border-collapse: collapse;
     border-spacing: 30px;
@@ -41,6 +41,7 @@ td{
 }
 .mycontainer {
   display: flex;
+  flex-flow: row wrap;
 }
 .mycontainer > div {
   width: 50%;
