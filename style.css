@@ -51,7 +51,6 @@
       font-size: 30px;
       text-shadow: 2px 2px #4a3432;
     }
-
     /* Heading Styles - Tarkista muut sivut ennenkuin lähdet tekemään muutoksia näihin, ettei muiden sivujen headerit mene rikki! 
     Mieluiten muuta headerit classillä tai ID:llä */
     h1 {
