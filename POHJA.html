@@ -182,12 +182,21 @@
         </footer>
 
         <script>
+            // Hamburger menu toggle 
             const toggleButton = document.getElementById('toggle-button');
             const navLinks = document.getElementById('nav-links');
 
             toggleButton.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
             });
+
+            // Close the menu when a link is clicked
+            navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+            });
+            
         </script>
     </body>
 </html>

@@ -171,11 +171,22 @@ td{
   <p>© Ryhmä E 2024</p>
 </footer>
         <script>
+            // Hamburger menu toggle 
             const toggleButton = document.getElementById('toggle-button');
             const navLinks = document.getElementById('nav-links');
 
+            // Toggle the menu when the hamburger button is clicked
             toggleButton.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
+            });
+
+            // Close the menu when a link is clicked
+            const navLinkItems = document.querySelectorAll('#nav-links a');
+
+            navLinkItems.forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
             });
         </script>
 
