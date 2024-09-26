@@ -151,6 +151,11 @@
 
     /* Media Queries - eli responisiiviset stylet mobiilinäkymään - voit lisätä, mutta ÄLÄ MUUTA olemassa olevia */
     @media (max-width: 600px) {
+
+      main {
+        padding-top: 100px;
+      }
+
       .nav-links {
           display: none;
           flex-direction: column;
@@ -216,6 +221,14 @@
 
       main {
         min-height: 800px;
+      }
+    }
+
+/* Jos selaimen ikkuna on yli 800px korkea */
+    @media (min-width: 800px) {
+      
+      main {
+        min-height: 900px;
       }
     }
 
