@@ -108,6 +108,11 @@
     }
 
     /* Link Styles - ÄLÄ MUUTA*/
+    a {
+      color:#e07e3d;
+      text-decoration: underline;
+    }
+
     .nav-links a {
       color: #ebe5d5;
       text-decoration: none;
