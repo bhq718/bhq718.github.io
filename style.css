@@ -108,7 +108,7 @@
     }
 
     /* Link Styles - ÄLÄ MUUTA*/
-    a {
+    .nav-links a {
       color: #ebe5d5;
       text-decoration: none;
     }
