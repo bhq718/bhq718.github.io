@@ -224,8 +224,13 @@
 
 
 /* Tähän alle KISSAMME sivun style */
+.kissalista {
+  margin-left: 15px;
+}
 .kissamme {
-  padding: 3px;
+  padding: 5px;
+  background-color:#e07e3d;
+  max-width: 100%;
 }
 
 
