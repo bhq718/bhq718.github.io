@@ -219,6 +219,14 @@
       }
     }
 
+/* Jos selaimen ikkuna on yli 800px korkea */
+    @media (min-width: 800px) {
+      
+      main {
+        min-height: 1000px;
+      }
+    }
+
 /* Tähän alle INDEX sivun style */
 
 
