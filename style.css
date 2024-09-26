@@ -51,7 +51,6 @@
       font-size: 30px;
       text-shadow: 2px 2px #4a3432;
     }
-
     /* Heading Styles - Tarkista muut sivut ennenkuin lähdet tekemään muutoksia näihin, ettei muiden sivujen headerit mene rikki! 
     Mieluiten muuta headerit classillä tai ID:llä */
     h1 {
@@ -79,7 +78,7 @@
       background-color: #ebe5d5;
       font-family: "Roboto", system-ui; 
       font-size: 16px;
-      padding: 125px 35px 150px 20px;
+      padding: 140px 35px 150px 20px;
       margin: auto;
       max-width: 1000px;
       text-align: left;
@@ -206,12 +205,25 @@
 
 /* Jos mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
     @media (min-width: 600px) { 
+
       #logo-mobile {
           display: none;
       }
 
       #calicafe {
           display: none;
+      }
+
+      main {
+        min-height: 800px;
+      }
+    }
+
+/* Jos selaimen ikkuna on yli 800px korkea */
+    @media (min-width: 800px) {
+      
+      main {
+        min-height: 1000px;
       }
     }
 
