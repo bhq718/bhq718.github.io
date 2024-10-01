@@ -218,7 +218,26 @@
         min-height: 800px;
       }
     }
+    
+    
+    iframe {
+    border: 15px dashed #e07e3d;
+    border-radius: 20%;
+    display: flex;
+    float: right;
+    }
+ .container {
+  display: flex;
+  align-items: flex-start;
+ }
+ .instructions{
+  width: 300px;
+  text-align: justify;
+  margin-right: 25px;
+  padding: 5px;
 
+
+ }
 /* Tähän alle INDEX sivun style */
 
 
