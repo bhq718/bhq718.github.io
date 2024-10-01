@@ -222,14 +222,6 @@
       }
     }
 
-/* Jos selaimen ikkuna on yli 800px korkea */
-    @media (min-width: 800px) {
-      
-      main {
-        min-height: 900px;
-      }
-    }
-
 /* Tähän alle INDEX sivun style */
 
 
@@ -237,7 +229,7 @@
 /* Tähän alle KISSAMME sivun style */
 .kissalista {
   margin-left: 15px;
-  padding: 5px;
+  padding: 25px;
   background-color:#fcfcf0;
   max-width: 85%;
   border-radius: 10px;
@@ -254,7 +246,7 @@
   max-width: 100%;
 }
 .kissa_p {
-  padding: 5px;
+  padding: 15px;
   background-color:#fcfcf0;
   max-width: 90%;
   border-radius: 10px;
