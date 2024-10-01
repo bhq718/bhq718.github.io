@@ -52,16 +52,45 @@ td{
     padding-bottom: 4px;
     
 }
-.mycontainer {
+#mycontainer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
 }
-.mycontainer > div {
+#mycontainer > div {
   width: 50%;
 
 }
+#menukuva{
+  display:flex;
+  flex-flow: row wrap;
+
+  justify-content: space-evenly;
+}
+#kahvi{
+max-width: 400px;
+
+}
+
+#esittely{
+display:flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content:space-between;
+}
+
+#teksti{
+  display:flex;
+  flex-direction: column;
+  flex:1;
+}
+
+#kahvila{
+ max-width: 400px;
+flex-shrink: 0;
+}
+
 
   </style>
 
@@ -94,42 +123,51 @@ td{
 </header>
 
 <main>
+  <div id="esittely">
+    <div id="teksti">
   <h1>CaliCafe -gluteeniton kissakahvila</h1>
-  <p> Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Teemme yhteistyötä paikallisten eläinsuojeluyhdistysten kanssa ja lahjoitamme osan tuotoistamme eläinten suojeluun. Käymällä kahvilassamme tuet siis eläintensuojelutyötä. </p> <br>
+  <p> Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Teemme yhteistyötä paikallisten eläinsuojeluyhdistysten kanssa ja lahjoitamme osan tuotoistamme eläinten suojeluun. Käymällä kahvilassamme tuet siis eläintensuojelutyötä.
+  </p></div>
+  <img id="kahvila" src="Kuvat/kahvila.jpg" alt="Kuva kahvilan myyntitiskistä">
+</div>
+   <br>
+ 
   <p>Kahvilassamme on tällä hetkellä 5 vakituista kissaa. Tustustu kissoihimme <a href="Kissamme.html">täältä</a>.</p> <br>
   <p>TÄHÄN JOTAIN TEKSTIÄ LISÄÄ???</p>
 
   <h1 id="menu"> MENU</h1>
+ 
   <p>Leivomme itse kaikki syötävämme paikan päällä gluteenittomista jauhoista. </p>
- <div class="mycontainer">
+ <div id="mycontainer">
   <table id="table1">
+  
     <tr>
       <th>Juomat</th>
-      <th>Hinta</th>
+      <th style ="text-align: center;">Hinta</th>
     </tr>
     <tr>
       <td>Kahvi</td>
-      <td>2€</td>
+      <td style ="text-align: center;">2€</td>
     </tr>
     <tr>
       <td>Tee</td>
-      <td>2€</td>
+      <td style ="text-align: center;">2€</td>
     </tr>
     <tr>
         <td>Kaakao</td>
-        <td>2€</td>
+        <td style ="text-align: center;">2€</td>
     </tr>
     <tr>
         <td>Latte</td>
-        <td>4€</td>
+        <td style ="text-align: center;">4€</td>
     </tr>
     <tr>
         <td>Limu</td>
-        <td>2,5€</td>
+        <td style ="text-align: center;">2,5€</td>
     </tr>
     <tr>
         <td>Mehu</td>
-        <td>1€</td>
+        <td style ="text-align: center;">1€</td>
     </tr>
   </table>
   <table id="table2">
@@ -163,6 +201,11 @@ td{
     </tr>
   </table>
 </div>
+<br>
+<div id="menukuva">
+<img id="kahvi" img src="Kuvat/kahvi3.png" alt="Kuva Latte-kahvista">
+<img id="kahvi" img src="Kuvat/kuppikakku.png" alt="Kuva suklaisesta kuppikakusta, jossa on tuorejuusto kuorrutus kuivatulla vadelmarouheella">
+</div>
 <p>tekstiä tekstiä</p>
 </main>
 
@@ -171,11 +214,22 @@ td{
   <p>© Ryhmä E 2024</p>
 </footer>
         <script>
+            // Hamburger menu toggle 
             const toggleButton = document.getElementById('toggle-button');
             const navLinks = document.getElementById('nav-links');
 
+            // Toggle the menu when the hamburger button is clicked
             toggleButton.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
+            });
+
+            // Close the menu when a link is clicked
+            const navLinkItems = document.querySelectorAll('#nav-links a');
+
+            navLinkItems.forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
             });
         </script>
 
