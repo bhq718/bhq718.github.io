@@ -239,11 +239,30 @@
 /* Tähän alle KISSAMME sivun style */
 .kissalista {
   margin-left: 15px;
+  padding: 5px;
+  background-color:#fcfcf0;
+  max-width: 85%;
+  border-radius: 10px;
+  border-style:solid;
+  border-color: #4a3432;
+  border-width: 1px;
 }
 .kissamme {
   padding: 5px;
-  background-color:#e07e3d;
+  border-radius: 10px;
+  border-style: dashed;
+  border-color: #e07e3d;
+  border-width: 5px;
   max-width: 100%;
+}
+.kissa_p {
+  padding: 5px;
+  background-color:#fcfcf0;
+  max-width: 90%;
+  border-radius: 10px;
+  border-style:solid;
+  border-color: #4a3432;
+  border-width: 1px;
 }
 
 
