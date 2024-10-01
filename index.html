@@ -69,13 +69,20 @@ td{
 
 .esittely{
 display:flex;
-flex-flow:row wrap;
-align-content: flex-start;
-
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content:space-between;
 }
-.kahvila{
- max-width: 100px;
 
+.teksti{
+  display:flex;
+  flex-direction: column;
+  flex:1;
+}
+
+.kahvila{
+ max-width: 400px;
+flex-shrink: 0;
 }
 
 
@@ -111,9 +118,10 @@ align-content: flex-start;
 
 <main>
   <div id="esittely">
+    <div id="teksti">
   <h1>CaliCafe -gluteeniton kissakahvila</h1>
   <p> Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Teemme yhteistyötä paikallisten eläinsuojeluyhdistysten kanssa ja lahjoitamme osan tuotoistamme eläinten suojeluun. Käymällä kahvilassamme tuet siis eläintensuojelutyötä.
-  </p>
+  </p></div>
   <img id="kahvila" src="Kuvat/kahvila.jpg" alt="Kuva kahvilan myyntitiskistä">
 </div>
    <br>
