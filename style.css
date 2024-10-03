@@ -246,12 +246,12 @@
   font-size: larger;
 }
 .kissamme {
-  width: 50%;
+  width: 60%;
   max-width: 400px;
-  float: left;
-  border: 2px solid #e07e3d;
+  border: 3px solid #e07e3d;
+  margin-top: 20px;
   margin-left: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #ebe5d5;
 }
 .kissa_p {
@@ -260,16 +260,26 @@
   max-width: 100%;
 }
 
-.flex-kissat {
-  display: flex;
-  flex-flow: row wrap;
+.flex-kissat{
+  display:flex;
+  flex-wrap: wrap;
   align-items: flex-start;
+  justify-content:space-evenly;
 }
 
-.tekstikis {
+.tekstikis{
+  display:flex;
   flex-direction: column;
+  flex:1;
+  min-width: 250px;
+  width: 100%;
+  margin-top: 25px;
 }
 
+.nimet{
+  padding-left: 30px;
+  margin-top: 15px;
+}
 
 /* Tähän alle YHTEYSTIEDOT sivun style */
 
@@ -289,8 +299,8 @@
 
 #kartta {
 max-width: 500px;
-border: 2px solid #e07e3d;
-border-radius: 20%;
+border: 3px solid #e07e3d;
+border-radius: 5px;
 margin-top: 25px;
 margin-right: 5px;
 
