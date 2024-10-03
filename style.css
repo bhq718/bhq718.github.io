@@ -117,6 +117,7 @@
     }
 
     /* Link Styles - ÄLÄ MUUTA*/
+
     a {
       color: #ebe5d5;
     }
@@ -286,6 +287,7 @@ display: flex;
 flex-flow: row wrap;
 justify-content: space-evenly;
 align-items: center;
+scroll-margin-top: 100px; /* jotta ankkuri pysähtyy oikeaan kohtaan */
 }
 
 #menu > div {
