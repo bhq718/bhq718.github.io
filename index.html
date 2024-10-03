@@ -14,141 +14,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet"/>
-  <style>
-    
-#taulukko1{
-    max-width: 350px;
-    width: 100%;
-    border: 2px solid #e07e3d ;
-    border-collapse: collapse;
-    border-spacing: 30px;
-    margin-left: 10px;
-    margin-top: 10px;
-    padding: 10px;
-   
-}
-#taulukko2{
-    max-width: 350px;
-    width: 100%;
-    border: 2px solid #e07e3d ;
-    border-collapse: collapse;
-    border-spacing: 30px;
-    margin-left: 10px;
-    margin-top: 10px;
-    padding: 10px;
-}
-th {
-  max-width: 100px;
-    background-color: #e07e3d ;
-    opacity: 80%;
-  color: #4a3432;
-  padding: 10px;
-  border-bottom: 2px solid #e07e3d;
-}
-td{
-    border-bottom: 2px solid #e07e3d;
-    padding-left: 10px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    
-}
-#menu {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#menu > div {
-  width: 50%;
-
-}
-#menukuva{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-#kahvi{
-width: 50%;
-max-width: 300px;
-border: 2px solid #e07e3d;
-margin: 5px;
-
-}
-
-#esittely{
-display:flex;
-flex-wrap: wrap;
-align-items: flex-start;
-justify-content:space-between;
-}
-
-#teksti{
-  display:flex;
-  flex-direction: column;
-  flex:1;
-  min-width: 200px;
-}
-
-#kahvila{
-  width: 100%;
- max-width: 400px;
-margin-top: 20px;
-border: 2px solid #e07e3d;
-}
-
-.button  {
-  max-width: 150px;
-}
-
-.button-53 {
-  background-color: #e07e3d;
-  border: 0px solid #8f6c49;
-  box-sizing: border-box;
-  color: #ebe5d5;
-  text-shadow: 3px 3px #4a3432;
-  text-decoration: none;
-  display: flex;
-  font-family:"Nerko One", system-ui;
-  font-size: 36px;
-  letter-spacing: 2px;
-  padding-bottom: 5px;
-  justify-content: center;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  max-width: 150px;
-  cursor: pointer;
-  transform: rotate(-2deg);
-  touch-action: manipulation;
-  margin: 30px;
-}
-
-.button-53:focus {
-  outline: 0;
-}
-
-.button-53:hover {
-  text-shadow: 0px 0px #4a3432;
-}
-
-.button-53:after {
-  content: '';
-  position: absolute;
-  border: 1px solid #4a3432;
-  bottom: 4px;
-  left: 4px;
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
-}
-
-.button-53:hover:after {
-  bottom: 2px;
-  left: 2px;
-}
-
-
-
-  </style>
 
   <title>CaliCafé - Gluteenitonta herkuttelua</title>
 </head>
@@ -171,7 +36,7 @@ border: 2px solid #e07e3d;
             src="https://bhq718.github.io/Kuvat/logo.png"
             alt="Simppeli illustraatio calico kissasta istumassa"
         />
-        <a href="index.html">Etusivu</a>
+        <a href="index.html" class="active">Etusivu</a>
         <a href="index.html#menu">Menu</a>
         <a href="kissamme.html">Kissamme</a>
         <a href="yhteystiedot.html">Yhteystiedot</a>
@@ -205,7 +70,7 @@ border: 2px solid #e07e3d;
   <p style ="text-align: center;">Leivomme itse kaikki syötävämme paikan päällä gluteenittomista jauhoista. </p>
   <br>
  <div id="menu">
-  <table id="taulukko1">
+  <table id="taulukko">
   
     <tr>
       <th>Juomat</th>
@@ -236,7 +101,7 @@ border: 2px solid #e07e3d;
         <td style ="text-align: center;">1€</td>
     </tr>
   </table>
-  <table id="taulukko2">
+  <table id="taulukko">
     <tr>
       <th>Syötävät</th>
       <th>Hinta</th>
@@ -269,11 +134,11 @@ border: 2px solid #e07e3d;
 </div>
 <br>
 <div id="menukuva">
-<img id="kahvi" img src="/Kuvat/kahvi.jpg" alt="Kuva Latte-kahvista">
-<img id="kahvi" img src="/Kuvat/kuppikakku.jpg" alt="Kuva suklaisesta kuppikakusta, jossa on tuorejuusto kuorrutus kuivatulla vadelmarouheella">
+<img class="kahvi" img src="Kuvat/kahvi.jpg" alt="Kuva Latte-kahvista" />
+<img class="kahvi" img src="Kuvat/kuppikakku.jpg" alt="Kuva suklaisesta kuppikakusta, jossa on tuorejuusto kuorrutus kuivatulla vadelmarouheella" />
 </div>
 <br>
-<p>Jos sinulla on kysymyksiä, voit olla meihin yhteydessä. Katso <a href="Yhteystiedot.html"> yhteystiedot-sivu!</p>
+<p>Jos sinulla on kysymyksiä, voit olla meihin yhteydessä. Katso <a href="yhteystiedot.html"> yhteystiedot-sivu!</a> </p>
 </main>
 
 <footer>
