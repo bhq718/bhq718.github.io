@@ -259,7 +259,29 @@
 
 /* Tähän alle YHTEYSTIEDOT sivun style */
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 
+.text {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+
+}
+
+#kartta {
+max-width: 500px;
+flex-shrink: 0;
+border: 2px solid #e07e3d;
+border-radius: 20%;
+margin-top: 25px;
+
+
+}
 
 /* Fontit - Näistä voi kopioida itselleen fontin styleen jos se eroaa normaalista (roboto, 300, normal) 
 
