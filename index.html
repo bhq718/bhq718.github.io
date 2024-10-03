@@ -64,12 +64,12 @@ td{
 }
 #menukuva{
   display:flex;
-  flex-flow: row wrap;
-
+  flex-direction: row;
   justify-content: space-evenly;
 }
 #kahvi{
 max-width: 400px;
+border: 2px solid #e07e3d;
 
 }
 
@@ -89,11 +89,12 @@ justify-content:space-between;
 #kahvila{
  max-width: 400px;
 margin-top: 20px;
-flex-shrink: 0;
+border: 2px solid #e07e3d;
 }
+
 .button-53 {
   background-color: #e07e3d;
-  border: 0 solid #8f6c49;
+  border: 1px solid #8f6c49;
   box-sizing: border-box;
   color: #ebe5d5;
   text-shadow: 2px 2px #4a3432;
@@ -137,12 +138,6 @@ flex-shrink: 0;
   bottom: 2px;
   left: 2px;
 }
-
-@media (min-width: 768px) {
-  .button-53 {
-    padding: .75rem 3rem;
-    font-size: 1.25rem;
-  }
 }
 
 

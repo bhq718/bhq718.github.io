@@ -205,6 +205,12 @@
           text-shadow: 3px 3px #4a3432;
       }
 
+      #kahvi{
+        max-width: 200px;
+        border: 2px solid #e07e3d;
+        
+        }
+
     }
 
 /* Jos mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
@@ -278,10 +284,10 @@
 
 #kartta {
 max-width: 500px;
-flex-shrink: 0;
 border: 2px solid #e07e3d;
 border-radius: 20%;
 margin-top: 25px;
+margin-right: 5px;
 
 
 }
