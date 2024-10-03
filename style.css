@@ -47,6 +47,7 @@
       background-repeat: no-repeat;
       background-position: top;
       background-attachment: fixed;
+      padding-top: 15px;
       z-index: 1100;
       font-family: "Nerko One", system-ui;
       font-size: 30px;
@@ -108,7 +109,7 @@
 
     /* logo Style */
     #logo {
-      max-width: 100%;
+      max-width: 70px;
     }
 
     /* Link Styles - ÄLÄ MUUTA*/
@@ -212,10 +213,15 @@
         border: 2px solid #e07e3d;
         
         }
+        
+      .kissamme{
+        width: 100%;
+        margin: 0px;
+      }
 
     }
 
-/* Jos mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
+/* Jos esimerkiksi mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
     @media (min-width: 600px) { 
 
       #logo-mobile {
@@ -247,13 +253,12 @@
 }
 .kissamme {
   width: 60%;
-  max-width: 400px;
+  max-width: 300px;
   border: 3px solid #e07e3d;
-  margin-top: 20px;
   margin-left: 15px;
-    border-radius: 5px;
-    background-color: #ebe5d5;
+  border-radius: 5px;
 }
+
 .kissa_p {
   margin-left: 20px;
   padding: 15px;
