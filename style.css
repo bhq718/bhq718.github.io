@@ -263,6 +263,14 @@
   border: 2px solid #e07e3d;
 }
 
+.flex-kissat {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tekstikis {
+  flex-direction: column;
+}
 
 
 /* Tähän alle YHTEYSTIEDOT sivun style */
