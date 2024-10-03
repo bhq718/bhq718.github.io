@@ -16,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet"/>
   <style>
     
-#table1{
+#taulukko1{
     max-width: 350px;
     width: 100%;
     border: 2px solid #e07e3d ;
@@ -27,7 +27,7 @@
     padding: 10px;
    
 }
-#table2{
+#taulukko2{
     max-width: 350px;
     width: 100%;
     border: 2px solid #e07e3d ;
@@ -52,13 +52,13 @@ td{
     padding-bottom: 4px;
     
 }
-#mycontainer {
+#menu {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
 }
-#mycontainer > div {
+#menu > div {
   width: 50%;
 
 }
@@ -89,6 +89,7 @@ justify-content:space-between;
 #kahvila{
  max-width: 400px;
 flex-shrink: 0;
+margin-top: 20px;
 }
 .button-53 {
   background-color: #e07e3d;
@@ -178,20 +179,23 @@ flex-shrink: 0;
 <main>
   <div id="esittely">
     <div id="teksti">
-  <h1>CaliCafe -gluteeniton kissakahvila</h1>
+  <h1>CaliCafe -gluteeniton kissakahvila</h1> 
+  <br>
   <p> Tervetuloa kissakahvilaamme CaliCafeen Helsingin Pasilaan. Kahvilamme on perustettu 2024, kun huomasimme, ettei Helsingistä löydy täysin gluteenittomia tuotteita tarjoavaa kahvilaa, jonka missiona on myös eläintensuojelu. Teemme yhteistyötä paikallisten eläinsuojeluyhdistysten kanssa ja lahjoitamme osan tuotoistamme eläinten suojeluun. Käymällä kahvilassamme tuet siis eläintensuojelutyötä.
-  </p></div>
+  </p></div> 
   <img id="kahvila" src="Kuvat/kahvila.jpg" alt="Kuva kahvilan myyntitiskistä">
 </div>
    <br>
  
   <p>Kahvilassamme on tällä hetkellä 5 vakituista kissaa. <br> Tustustu kissoihimme<a href="kissamme.html"> <button class="button-53" role="button"> Täältä</button></a></p> <br>
   <p>TÄHÄN JOTAIN TEKSTIÄ LISÄÄ???</p>
+  <br>
   <h1 id="menu"> MENU</h1>
- 
+ <br>
   <p>Leivomme itse kaikki syötävämme paikan päällä gluteenittomista jauhoista. </p>
- <div id="mycontainer">
-  <table id="table1">
+  <br>
+ <div id="menu">
+  <table id="taulukko1">
   
     <tr>
       <th>Juomat</th>
@@ -222,7 +226,7 @@ flex-shrink: 0;
         <td style ="text-align: center;">1€</td>
     </tr>
   </table>
-  <table id="table2">
+  <table id="taulukko2">
     <tr>
       <th>Syötävät</th>
       <th>Hinta</th>
