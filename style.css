@@ -204,6 +204,7 @@
           font-size: 50px;
           text-shadow: 3px 3px #4a3432;
       }
+
     }
 
 /* Jos mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
@@ -240,9 +241,8 @@
 .kissamme {
   padding: 5px;
   border-radius: 10px;
-  border-style: dashed;
+  border: 2px solid;
   border-color: #e07e3d;
-  border-width: 5px;
   max-width: 100%;
 }
 .kissa_p {
