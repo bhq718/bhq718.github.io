@@ -205,6 +205,12 @@
           text-shadow: 3px 3px #4a3432;
       }
 
+      #kahvi{
+        max-width: 200px;
+        border: 2px solid #e07e3d;
+        
+        }
+
     }
 
 /* Jos mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
@@ -232,20 +238,23 @@
   margin-left: 15px;
   padding: 25px;
   background-color:#fcfcf0;
-  max-width: 85%;
+  max-width: 90%;
   border-radius: 10px;
   border-style:solid;
   border-color: #4a3432;
   border-width: 1px;
+  font-size:larger;
 }
 .kissamme {
+  margin-left: 15px;
   padding: 5px;
   border-radius: 10px;
-  border: 2px solid;
+  border: 5px solid;
   border-color: #e07e3d;
   max-width: 100%;
 }
 .kissa_p {
+  margin-left: 15px;;
   padding: 15px;
   background-color:#fcfcf0;
   max-width: 90%;
