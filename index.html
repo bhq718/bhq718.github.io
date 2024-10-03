@@ -90,6 +90,59 @@ justify-content:space-between;
  max-width: 400px;
 flex-shrink: 0;
 }
+.button-53 {
+  background-color: #e07e3d;
+  border: 0 solid #8f6c49;
+  box-sizing: border-box;
+  color: #ebe5d5;
+  text-shadow: 2px 2px #4a3432;
+  display: flex;
+  font-family:"Nerko One", system-ui;
+  font-size: 36px;
+  letter-spacing: 2px;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 150px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 30px;
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #4a3432;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-53 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
 
 
   </style>
@@ -132,9 +185,8 @@ flex-shrink: 0;
 </div>
    <br>
  
-  <p>Kahvilassamme on tällä hetkellä 5 vakituista kissaa. Tustustu kissoihimme <a href="Kissamme.html">täältä</a>.</p> <br>
+  <p>Kahvilassamme on tällä hetkellä 5 vakituista kissaa. <br> Tustustu kissoihimme<a href="kissamme.html"> <button class="button-53" role="button"> Täältä</button></a></p> <br>
   <p>TÄHÄN JOTAIN TEKSTIÄ LISÄÄ???</p>
-
   <h1 id="menu"> MENU</h1>
  
   <p>Leivomme itse kaikki syötävämme paikan päällä gluteenittomista jauhoista. </p>
