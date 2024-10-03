@@ -43,7 +43,7 @@
       position: fixed;
       width: 100%;
       height: 130px;
-      background-image: url("kuvat/header.png");
+      background-image: url("https://bhq718.github.io/Kuvat/header.png");
       background-repeat: no-repeat;
       background-position: top;
       background-attachment: fixed;
@@ -93,7 +93,7 @@
       width: 100%;
       height: 150px;
       padding-top: 95px;
-      background-image: url("Kuvat/footer.png");
+      background-image: url("https://bhq718.github.io/Kuvat/footer.png");
       background-repeat: no-repeat;
       background-position: bottom;
       background-attachment: fixed;
