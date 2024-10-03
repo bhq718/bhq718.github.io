@@ -17,7 +17,37 @@
  
   <title>CaliCafé - Gluteenitonta herkuttelua</title>
   <style>
+
+.flex-kisssat{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 30px;
     
+    background-color: #ebe5d5;
+}
+
+#teksti1 {
+  display:flex;
+  flex-direction: row;
+  flex:1;
+  margin-left: 15px;;
+  padding: 15px;
+  background-color:#fcfcf0;
+  max-width: 50%;
+  border-radius: 10px;
+  border: 2px solid #e07e3d;
+}
+
+#kissa1{
+ max-width: 400px;
+border: 2px solid #e07e3d;
+margin-left: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #ebe5d5;
+}
+
   </style>
 </head>
     <body>
@@ -56,25 +86,49 @@
           <li><a href="#Kerttu">Kerttu</a></li>
         </ul>
         <br><br><br><br>
+        
         <h3 id="Tuuloma">Tuuloma</h3>
-        <img class="kissamme" src="kuvat/kissamme_tuuloma.jpg" alt="Ruskearaidallinen kissa kiipeilypuussa">
-        <p class="kissa_p">Tuuloma on 7-vuotias, ruskearaidallinen ja pitkäkarvainen kissaneiti. Hän tykkää kiivetä korkealle, ja usein löydätkin hänet istumasta kiipeilypuun tai -telineen korkeimmalta tasolta. Tuuloma on hitaasti lämpiävä luonne ja nauttii eniten, kun saa katsella vieraita kauempaa. Tule siis etsimään Tuuloma silloin, kun kaipaat sielukasta katsekontaktia ja rauhallista seuraa kahvihetkeesi. </p>
+
+            <div class=".flex-kissat">  
+                <div>           
+                  <img   src="kuvat/kissamme_tuuloma.jpg" alt="Ruskearaidallinen kissa kiipeilypuussa">
+                </div>
+                 <div>
+                    <p> Tuuloma on 7-vuotias, ruskearaidallinen ja pitkäkarvainen kissaneiti. Hän tykkää kiivetä korkealle, ja usein löydätkin hänet istumasta kiipeilypuun tai -telineen korkeimmalta tasolta. Tuuloma on hitaasti lämpiävä luonne ja nauttii eniten, kun saa katsella vieraita kauempaa. Tule siis etsimään Tuuloma silloin, kun kaipaat sielukasta katsekontaktia ja rauhallista seuraa kahvihetkeesi. </p>
+                 </div> 
+            </div>
+
         <br><br>
+        <div id="kissaesittely2"></div>
+            <div id="teksti2">
         <h3 id="Tonava">Tonava</h3>
-        <img class="kissamme" src="kuvat/musta.png" alt="Musta kissa katsoo kameraan">
+        <img id="kissa2" img class="kissamme" src="kuvat/musta.png" alt="Musta kissa katsoo kameraan">
+        </div>
         <p class="kissa_p">Tonava on 7-vuotias, jolla on lyhyt musta turkki. Tonava ja Tuuloma ovat parhaita kavereita, vaikka joskus he kinastelevatkin parhaista löhöilypaikoista. Tonava on perso herkuille, joten hän saattaa kärkkyä tähteitäsi! Hän osaa myös tehdä temppuja herkkujen eteen, ja halutessasi voit kysyä henkilökuntaamme näyttämään. </p>
+    </div>
         <br><br>
+        <div id="kissaesittely3"></div>
+            <div id="teksti3">
         <h3 id="Kiira">Kiira</h3>
-        <img class="kissamme" src="kuvat/kiira.png" alt="Ruskea täplikäs kissa makaa peiton päällä kiemuralla">
+        <img id="kissa3" img class="kissamme" src="kuvat/kiira.png" alt="Ruskea täplikäs kissa makaa peiton päällä kiemuralla"></div>
         <p class="kissa_p">Kiira on 10-vuotias Ocicat-kissaneiti. Luonteeltaan Kiira on erittäin ihmisläheinen ja ihmisrakas kissa, joka tykkää olla mukana ihan kaikessa. Kiiran lempipuuhia on jahdata leluja sekä kiipeillä ikkunalaudoilla ja ylähyllyillä. Kiira tulee mielellään syliin istumaan ja rakastaa rapsutuksia. Kiira viettää eniten aikaa Luxin läheisyydessä.</p>
+            </div>
         <br><br>
+        <div id="kissaesittely4"></div>
+            <div id="teksti4">
         <h3 id="Luxi">Luxi</h3>
-        <img class="kissamme" src="kuvat/luxi.jpg" alt="Monivärinen kissa makaa kyljellään ja paljastaa vatsansa">
+        <img id="kissa4" img class="kissamme" src="kuvat/luxi.jpg" alt="Monivärinen kissa makaa kyljellään ja paljastaa vatsansa">
+        </div>
         <p class="kissa_p">Luxi on 12-vuotias vanha setäkissa. Luxi mielellään viettää aikansa makoillen, ihmisiä seuraten ja rapsutuksia kerjäten. Luxin lempileikkejä ovat oman pehmolelun riepottelu ja narujen jahtaaminen. Luxin seurasta yleensä löytää Kiiran ja yhdessä he kerjäävät herkkuja asiakkailta.</p>
+    </div>
         <br><br>
+        <div id="kissaesittely5"></div>
+            <div id="teksti5">
         <h3 id="Kerttu">Kerttu</h3>
-        <img class="kissamme" src="kuvat/valkoinen.png" alt="Valkoinen kissa nukkuu silmät kiinni">
-        <p class="kissa_p">Kerttu on 12-vuotias valkoinen kissarouva. Hän viettää usein mieluummin aikaa ihmisten kuin kissakavereiden kanssa. Kertun näet siis todennäköisesti pöytäsi alla tai päällä loikoilemassa. Hän rakastaa rapsutuksia ja juttelee mielellään kanssasi. Kutsu siis Kerttua rohkeasti nimeltä, jos kaipaat juttuseuraa. Hän vastaa mieluiten lepertelyyn!</p>
+        <img id="kissa5" img class="kissamme" src="kuvat/valkoinen.png" alt="Valkoinen kissa nukkuu silmät kiinni">
+        </div>
+        <divclass="kissa_p">Kerttu on 12-vuotias valkoinen kissarouva. Hän viettää usein mieluummin aikaa ihmisten kuin kissakavereiden kanssa. Kertun näet siis todennäköisesti pöytäsi alla tai päällä loikoilemassa. Hän rakastaa rapsutuksia ja juttelee mielellään kanssasi. Kutsu siis Kerttua rohkeasti nimeltä, jos kaipaat juttuseuraa. Hän vastaa mieluiten lepertelyyn!</div>
+    </div>
         <br><br><br><br><br><br>
         </main>
         <footer>

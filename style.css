@@ -246,22 +246,23 @@
   font-size:larger;
 }
 .kissamme {
+  max-width: 400px;
+  border: 2px solid #e07e3d;
   margin-left: 15px;
-  padding: 5px;
-  border-radius: 10px;
-  border: 5px solid;
-  border-color: #e07e3d;
-  max-width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #ebe5d5;
 }
 .kissa_p {
+  display:flex;
+  flex-direction: row;
+  flex:1;
   margin-left: 15px;;
   padding: 15px;
   background-color:#fcfcf0;
-  max-width: 90%;
+  max-width: 50%;
   border-radius: 10px;
-  border-style:solid;
-  border-color: #4a3432;
-  border-width: 1px;
+  border: 2px solid #e07e3d;
 }
 
 
