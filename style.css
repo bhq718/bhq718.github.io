@@ -247,7 +247,7 @@
 }
 .kissamme {
   width: 50%;
-  max-width: 400px;
+  max-width: 200px;
   float: left;
   border: 2px solid #e07e3d;
   margin-left: 15px;
@@ -255,10 +255,10 @@
     background-color: #ebe5d5;
 }
 .kissa_p {
-  margin-left: 15px;;
+  margin-left: 20px;
   padding: 15px;
   background-color:#fcfcf0;
-  max-width: 50%;
+  max-width: 80%;
   border-radius: 10px;
   border: 2px solid #e07e3d;
 }
@@ -266,6 +266,7 @@
 .flex-kissat {
   display: flex;
   flex-flow: row wrap;
+  align-items: flex-start;
 }
 
 .tekstikis {
