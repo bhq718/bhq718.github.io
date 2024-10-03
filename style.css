@@ -1,16 +1,17 @@
         /* Color reference 
-        #4a3432 - Text color
-        #8f6c49 - Footer background
-        #e07e3d - Header/links background
+        #4a3432 - Teksti
+        #8f6c49 - Footer
+        #e07e3d - Header/links
         #ebe5d5 - Main background
-        #fcfcf0 - Body background
+        #fcfcf0 - Body background/nav linkit
         
-        Alinpana ennen fontteja on jokaiselle sivulle oma slotti stylelle, 
-        käyttäkää niitä kun viimeistelette sivuja jotta löytyy helposti sitten ongelmat jos niitä ilmenee!
+        Alinpana ennen fontteja on jokaiselle sivulle oma slotti stylelle.
 
         */
 
-    /* Global Styles - ÄLÄ MUUTA */
+    /* Global Styles - ÄLÄ MUUTA 
+    * universaalinen koodi, joka valitsee kaikki elementit */
+
     * {
       margin: 0;
       padding: 0;
@@ -51,6 +52,7 @@
       font-size: 30px;
       text-shadow: 2px 2px #4a3432;
     }
+    
     /* Heading Styles - ÄLÄ MUUTA */
     h1 {
       font-family: "Nerko One", system-ui;
@@ -112,11 +114,11 @@
     /* Link Styles - ÄLÄ MUUTA*/
     a {
       color:#e07e3d;
-      text-decoration: underline;
     }
     
     a:hover {
       color: #4a3432;
+      text-decoration: underline;
     }
 
     .nav-links a {
@@ -238,27 +240,31 @@
   margin-left: 15px;
   padding: 25px;
   background-color:#fcfcf0;
-  max-width: 85%;
-  border-radius: 10px;
-  border-style:solid;
-  border-color: #4a3432;
-  border-width: 1px;
-}
-.kissamme {
-  padding: 5px;
-  border-radius: 10px;
-  border: 2px solid;
-  border-color: #e07e3d;
-  max-width: 100%;
-}
-.kissa_p {
-  padding: 15px;
-  background-color:#fcfcf0;
   max-width: 90%;
   border-radius: 10px;
   border-style:solid;
   border-color: #4a3432;
   border-width: 1px;
+  font-size:larger;
+}
+.kissamme {
+  max-width: 400px;
+  border: 2px solid #e07e3d;
+  margin-left: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #ebe5d5;
+}
+.kissa_p {
+  display:flex;
+  flex-direction: row;
+  flex:1;
+  margin-left: 15px;;
+  padding: 15px;
+  background-color:#fcfcf0;
+  max-width: 50%;
+  border-radius: 10px;
+  border: 2px solid #e07e3d;
 }
 
 
