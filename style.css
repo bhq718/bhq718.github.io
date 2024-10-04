@@ -172,7 +172,7 @@
       margin-top: 10px;
       padding: 10px;
     }
-
+    /*th on otsikko rivi ja td on solu */
     th {
       max-width: 100px;
       background-color: #e07e3d;
@@ -241,6 +241,7 @@
       border-radius: 5px;
     }
 
+    /*Buttonin kaltevuus tulee transform määräyksellä rotate. Kun hiiren vie buttonin päälle, hover ja after tyylittelyllä buttonin border siirtyy lähemmäs buttonia. Hover tarkoittaa, kun hiiren vie buttonin tai objektin päälle ja after tarkoittaa sitä, kun buttonia tai objektia on painettu*/
     .button {
       max-width: 150px;
     }
