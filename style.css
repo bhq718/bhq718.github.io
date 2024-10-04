@@ -261,6 +261,7 @@ position: relative;
 text-align: center;
 width: 100%;
 max-width: 150px;
+max-height: 50px;
 cursor: pointer;
 transform: rotate(-2deg);
 touch-action: manipulation;
@@ -343,7 +344,6 @@ left: 2px;
 #tuuloma, #tonava, #kiira, #luxi, #kerttu {
   scroll-margin-top: 120px; 
 }
-
 
 /* Tähän alle YHTEYSTIEDOT sivun style */
 
@@ -429,9 +429,9 @@ margin-right: 5px;
           text-shadow: 3px 3px #4a3432;
       }
 
-      #kahvi{
-        max-width: 200px;
+      .kahvi{
         border: 2px solid #e07e3d;
+        margin-right: 10px;
         
         }
         
