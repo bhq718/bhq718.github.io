@@ -229,6 +229,20 @@
         margin: 0px;
       }
 
+      .kissalista > li {
+        padding: 0px;
+      }
+      
+      .kissa_p {
+        margin-left: 0px !important;
+        padding-left: 5px;
+        max-width: 100%;
+      }
+      .nimet{
+        padding-left: 15px !important;
+        margin-top: 15px;
+      }
+
     }
 
 /* Jos esimerkiksi mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
@@ -387,14 +401,14 @@ left: 2px;
 /* Tähän alle KISSAMME sivun style */
 
 .kissalista {
-  max-width: 80%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none;
+  margin-left: -50px;
 }
 
-.kissalista > li  {
+.kissalista > li {
   padding: 25px;
 }
 
