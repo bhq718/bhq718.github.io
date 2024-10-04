@@ -9,7 +9,7 @@
 
         */
 
-    /* Global Styles - ÄLÄ MUUTA 
+        /* Global Styles - ÄLÄ MUUTA 
     * universaalinen koodi, joka valitsee kaikki elementit */
 
     * {
@@ -56,7 +56,7 @@
       text-shadow: 2px 2px #4a3432;
       color: #ebe5d5;
     }
-    
+
     /* Heading Styles - ÄLÄ MUUTA */
     h1 {
       font-family: "Nerko One", system-ui;
@@ -76,12 +76,12 @@
       font-size: 27px;
       letter-spacing: 2px;
     }
-    
+
 
     /* Main Content Styles - ÄLÄ MUUTA */
     main {
       background-color: #ebe5d5;
-      font-family: "Roboto", system-ui; 
+      font-family: "Roboto", system-ui;
       font-size: 17px;
       padding: 140px 35px 150px 20px;
       margin: auto;
@@ -105,7 +105,7 @@
       z-index: 1000;
       color: #ebe5d5;
       text-align: center;
-      font-family: "Roboto", system-ui; 
+      font-family: "Roboto", system-ui;
       font-weight: 300;
       font-size: 14px;
       letter-spacing: 1px;
@@ -121,7 +121,7 @@
     a {
       color: #4a3432;
     }
-    
+
     a:hover {
       color: #4a3432;
       text-decoration: underline;
@@ -136,7 +136,7 @@
       color: #ebe5d5;
       text-decoration: underline;
     }
-    
+
     .nav-links {
       display: flex;
       flex-grow: 1;
@@ -160,215 +160,223 @@
       cursor: pointer;
     }
 
-/* Tähän alle INDEX sivun style */
+    /* Tähän alle INDEX sivun style */
 
-#taulukko{
-  max-width: 350px;
-  width: 100%;
-  border: 2px solid #e07e3d ;
-  border-collapse: collapse;
-  border-spacing: 30px;
-  margin-left: 10px;
-  margin-top: 10px;
-  padding: 10px;
-}
+    #taulukko {
+      max-width: 350px;
+      width: 100%;
+      border: 2px solid #e07e3d;
+      border-collapse: collapse;
+      border-spacing: 30px;
+      margin-left: 10px;
+      margin-top: 10px;
+      padding: 10px;
+    }
 
-th {
-max-width: 100px;
-  background-color: #e07e3d ;
-  opacity: 80%;
-color: #4a3432;
-padding: 10px;
-border-bottom: 2px solid #e07e3d;
-}
+    th {
+      max-width: 100px;
+      background-color: #e07e3d;
+      opacity: 80%;
+      color: #4a3432;
+      padding: 10px;
+      border-bottom: 2px solid #e07e3d;
+    }
 
-td {
-  border-bottom: 2px solid #e07e3d;
-  padding-left: 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  
-}
+    td {
+      border-bottom: 2px solid #e07e3d;
+      padding-left: 10px;
+      padding-top: 4px;
+      padding-bottom: 4px;
 
-#menu {
-display: flex;
-flex-flow: row wrap;
-justify-content: space-evenly;
-align-items: center;
-scroll-margin-top: 100px; 
-}
+    }
 
-#menu > div {
-width: 50%;
+    #menu {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      scroll-margin-top: 100px;
+    }
 
-}
+    #menu>div {
+      width: 50%;
 
-#menukuva{
-display:flex;
-flex-direction: row;
-justify-content: space-evenly;
+    }
 
-}
+    #menukuva {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
 
-.kahvi{
-width: 50%;
-max-width: 250px;
-border: 3px solid #e07e3d;
-border-radius: 5px;
-}
+    }
 
-#esittely{
-display:flex;
-flex-wrap: wrap;
-align-items: flex-start;
-justify-content:space-between;
-}
+    .kahvi {
+      width: 50%;
+      max-width: 250px;
+      border: 3px solid #e07e3d;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
 
-#teksti{
-display:flex;
-flex-direction: column;
-flex:1;
-min-width: 200px;
-padding-right: 10px;
-}
+    #esittely {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
 
-#kahvila{
-width: 100%;
-max-width: 400px;
-margin-top: 20px;
-border: 3px solid #e07e3d;
-border-radius: 5px;
-}
+    #teksti {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-width: 200px;
+      padding-right: 10px;
+    }
 
-.button  {
-max-width: 150px;
-}
+    #kahvila {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+      border: 3px solid #e07e3d;
+      border-radius: 5px;
+    }
 
-.button-53 {
-background-color: #e07e3d;
-border: 0px solid #8f6c49;
-box-sizing: border-box;
-color: #ebe5d5;
-text-shadow: 3px 3px #4a3432;
-text-decoration: none;
-display: flex;
-font-family:"Nerko One", system-ui;
-font-size: 36px;
-letter-spacing: 2px;
-padding-bottom: 5px;
-justify-content: center;
-position: relative;
-text-align: center;
-width: 100%;
-max-width: 150px;
-max-height: 50px;
-cursor: pointer;
-transform: rotate(-2deg);
-touch-action: manipulation;
-margin-left: 30px;
-margin-bottom: 30px;
-}
+    .button {
+      max-width: 150px;
+    }
 
-.button-53:focus {
-outline: 0;
-}
+    .button-53 {
+      background-color: #e07e3d;
+      border: 0px solid #8f6c49;
+      box-sizing: border-box;
+      color: #ebe5d5;
+      text-shadow: 3px 3px #4a3432;
+      text-decoration: none;
+      display: flex;
+      font-family: "Nerko One", system-ui;
+      font-size: 36px;
+      letter-spacing: 2px;
+      padding-bottom: 5px;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      max-width: 150px;
+      max-height: 50px;
+      cursor: pointer;
+      transform: rotate(-2deg);
+      touch-action: manipulation;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
 
-.button-53:hover {
-text-shadow: 0px 0px #4a3432;
-}
+    .button-53:focus {
+      outline: 0;
+    }
 
-.button-53:after {
-content: '';
-position: absolute;
-border: 1px solid #4a3432;
-bottom: 4px;
-left: 4px;
-width: calc(100% - 1px);
-height: calc(100% - 1px);
-}
+    .button-53:hover {
+      text-shadow: 0px 0px #4a3432;
+    }
 
-.button-53:hover:after {
-bottom: 2px;
-left: 2px;
-}
+    .button-53:after {
+      content: '';
+      position: absolute;
+      border: 1px solid #4a3432;
+      bottom: 4px;
+      left: 4px;
+      width: calc(100% - 1px);
+      height: calc(100% - 1px);
+    }
 
-/* Tähän alle KISSAMME sivun style */
+    .button-53:hover:after {
+      bottom: 2px;
+      left: 2px;
+    }
 
-.kissalista {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  list-style: none;
-  margin-left: -50px;
-}
+    /* Tähän alle KISSAMME sivun style */
 
-.kissalista > li {
-  padding: 25px;
-}
+    .kissalista {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      list-style: none;
+      margin-left: -50px;
+    }
 
-.kissamme {
-  width: 60%;
-  max-width: 300px;
-  border: 3px solid #e07e3d;
-  margin-left: 15px;
-  border-radius: 5px;
-}
+    .kissalista>li {
+      padding: 25px;
+    }
 
-.kissa_p {
-  margin-left: 20px;
-  padding: 15px;
-  max-width: 100%;
-}
+    .kissamme {
+      width: 60%;
+      max-width: 300px;
+      border: 3px solid #e07e3d;
+      margin-left: 15px;
+      border-radius: 5px;
+    }
 
-.flex-kissat{
-  display:flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content:space-evenly;
-}
+    .kissa_p {
+      margin-left: 20px;
+      padding: 15px;
+      max-width: 100%;
+    }
 
-.tekstikis{
-  display:flex;
-  flex-direction: column;
-  flex:1;
-  min-width: 250px;
-  width: 100%;
-  margin-top: 25px;
-}
+    .flex-kissat {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-evenly;
+    }
 
-.nimet{
-  padding-left: 30px;
-  margin-top: 15px;
-}
+    .tekstikis {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-width: 250px;
+      width: 100%;
+      margin-top: 25px;
+    }
 
-#tuuloma, #tonava, #kiira, #luxi, #kerttu {
-  scroll-margin-top: 120px; 
-}
+    .nimet {
+      padding-left: 30px;
+      margin-top: 15px;
+    }
 
-/* Tähän alle YHTEYSTIEDOT sivun style */
+    #tuuloma,
+    #tonava,
+    #kiira,
+    #luxi,
+    #kerttu {
+      scroll-margin-top: 120px;
+    }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-}
+    /* Tähän alle YHTEYSTIEDOT sivun style */
 
-.text {
-  display: flex;
-  flex-direction: column;
-  flex: 2;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
 
-}
+    .text {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
 
-#kartta {
-max-width: 500px;
-border: 3px solid #e07e3d;
-border-radius: 5px;
-margin-top: 25px;
-margin-right: 5px;
+    }
 
-}
+    #kartta {
+      max-width: 400px;
+      border: 3px solid #e07e3d;
+      border-radius: 5px;
+      margin-top: 25px;
+      margin-right: 5px;
+      margin-left: 10px;
+      width: 400px;
+      height: 300px;
+
+    }
 
     /* Media Queries - eli responisiiviset stylet mobiilinäkymään - voit lisätä, mutta ÄLÄ MUUTA olemassa olevia */
     @media (max-width: 600px) {
@@ -378,93 +386,94 @@ margin-right: 5px;
       }
 
       .nav-links {
-          display: none;
-          flex-direction: column;
-          width: 100%;
-          position: absolute;
-          background-color: #e07e3d;
-          top: 50px;
-          height: 100vh;
-          justify-content: center;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #e07e3d;
+        top: 50px;
+        height: 100vh;
+        justify-content: center;
       }
 
-      .nav-links > a {
-          font-size: 45px;
-          padding: 0px 50px 50px 50px;
-          text-shadow: 4px 4px #4a3432;
+      .nav-links>a {
+        font-size: 45px;
+        padding: 0px 50px 50px 50px;
+        text-shadow: 4px 4px #4a3432;
       }
 
       .toggle-button {
-          display: block;
-          position: absolute;
-          right: 20px;
-          top: 20px;
-          z-index: 1100;
-          font-size: 30px;
-          text-shadow: 3px 3px #4a3432;
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1100;
+        font-size: 30px;
+        text-shadow: 3px 3px #4a3432;
       }
 
       .nav-links.active {
-          display: flex;
+        display: flex;
       }
 
       #logo {
-          display: none;
+        display: none;
       }
 
       #logo-mobile {
-          display: block;
-          position: absolute;
-          left: 20px;
-          top: 5px;
-          max-height: 70px;
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 5px;
+        max-height: 70px;
       }
 
       #calicafe {
-          display: block;
-          position: absolute;
-          top: 5px;
-          color: #ebe5d5;
-          font-size: 50px;
-          text-shadow: 3px 3px #4a3432;
+        display: block;
+        position: absolute;
+        top: 5px;
+        color: #ebe5d5;
+        font-size: 50px;
+        text-shadow: 3px 3px #4a3432;
       }
 
-      .kahvi{
+      .kahvi {
         border: 2px solid #e07e3d;
         margin-right: 10px;
-        
-        }
-        
-      .kissamme{
+
+      }
+
+      .kissamme {
         width: 100%;
         margin: 0px;
       }
 
-      .kissalista > li {
+      .kissalista>li {
         margin: 0px;
       }
-      
+
       .kissa_p {
         margin-left: 0px;
         padding-left: 5px;
         max-width: 100%;
       }
-      .nimet{
-        padding-left: 5px ;
+
+      .nimet {
+        padding-left: 5px;
         margin-top: 15px;
       }
 
     }
 
-/* Jos esimerkiksi mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
-    @media (min-width: 600px) { 
+    /* Jos esimerkiksi mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
+    @media (min-width: 600px) {
 
       #logo-mobile {
-          display: none;
+        display: none;
       }
 
       #calicafe {
-          display: none;
+        display: none;
       }
 
       main {
@@ -472,36 +481,36 @@ margin-right: 5px;
       }
     }
 
-    @media (min-height: 800px) { 
+    @media (min-height: 800px) {
       main {
         min-height: 850px;
       }
     }
 
 
-/* Fontit - Näistä voi kopioida itselleen fontin styleen jos se eroaa normaalista (roboto, 300, normal) 
+    /* Fontit - Näistä voi kopioida itselleen fontin styleen jos se eroaa normaalista (roboto, 300, normal) 
 
 .roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-style: normal;
 }
 
 .roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+font-family: "Roboto", sans-serif;
+font-weight: 900;
+font-style: normal;
 }
 
 .nerko-one-regular {
-  font-family: "Nerko One", cursive;
-  font-weight: 400;
-  font-style: normal;
+font-family: "Nerko One", cursive;
+font-weight: 400;
+font-style: normal;
 }
 */
