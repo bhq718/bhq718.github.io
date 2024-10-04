@@ -113,7 +113,7 @@
 
     /* logo Style */
     #logo {
-      max-width: 70px;
+      max-width: 100%;
     }
 
     /* Link Styles - ÄLÄ MUUTA*/
@@ -158,113 +158,6 @@
       border: none;
       padding: 14px;
       cursor: pointer;
-    }
-
-    /* Media Queries - eli responisiiviset stylet mobiilinäkymään - voit lisätä, mutta ÄLÄ MUUTA olemassa olevia */
-    @media (max-width: 600px) {
-
-      main {
-        padding-top: 100px;
-      }
-
-      .nav-links {
-          display: none;
-          flex-direction: column;
-          width: 100%;
-          position: absolute;
-          background-color: #e07e3d;
-          top: 50px;
-          height: 100vh;
-          justify-content: center;
-      }
-
-      .nav-links > a {
-          font-size: 45px;
-          padding: 0px 50px 50px 50px;
-          text-shadow: 4px 4px #4a3432;
-      }
-
-      .toggle-button {
-          display: block;
-          position: absolute;
-          right: 20px;
-          top: 20px;
-          z-index: 1100;
-          font-size: 30px;
-          text-shadow: 3px 3px #4a3432;
-      }
-
-      .nav-links.active {
-          display: flex;
-      }
-
-      #logo {
-          display: none;
-      }
-
-      #logo-mobile {
-          display: block;
-          position: absolute;
-          left: 20px;
-          top: 20px;
-      }
-
-      #calicafe {
-          display: block;
-          position: absolute;
-          top: 5px;
-          color: #ebe5d5;
-          font-size: 50px;
-          text-shadow: 3px 3px #4a3432;
-      }
-
-      #kahvi{
-        max-width: 200px;
-        border: 2px solid #e07e3d;
-        
-        }
-        
-      .kissamme{
-        width: 100%;
-        margin: 0px;
-      }
-
-      .kissalista > li {
-        padding: 0px;
-      }
-      
-      .kissa_p {
-        margin-left: 0px !important;
-        padding-left: 5px;
-        max-width: 100%;
-      }
-      .nimet{
-        padding-left: 15px !important;
-        margin-top: 15px;
-      }
-
-    }
-
-/* Jos esimerkiksi mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
-    @media (min-width: 600px) { 
-
-      #logo-mobile {
-          display: none;
-      }
-
-      #calicafe {
-          display: none;
-      }
-
-      main {
-        min-height: 800px;
-      }
-    }
-
-    @media (min-height: 800px) { 
-      main {
-        min-height: 850px;
-      }
     }
 
 /* Tähän alle INDEX sivun style */
@@ -471,6 +364,114 @@ margin-top: 25px;
 margin-right: 5px;
 
 }
+
+    /* Media Queries - eli responisiiviset stylet mobiilinäkymään - voit lisätä, mutta ÄLÄ MUUTA olemassa olevia */
+    @media (max-width: 600px) {
+
+      main {
+        padding-top: 100px;
+      }
+
+      .nav-links {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          position: absolute;
+          background-color: #e07e3d;
+          top: 50px;
+          height: 100vh;
+          justify-content: center;
+      }
+
+      .nav-links > a {
+          font-size: 45px;
+          padding: 0px 50px 50px 50px;
+          text-shadow: 4px 4px #4a3432;
+      }
+
+      .toggle-button {
+          display: block;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+          z-index: 1100;
+          font-size: 30px;
+          text-shadow: 3px 3px #4a3432;
+      }
+
+      .nav-links.active {
+          display: flex;
+      }
+
+      #logo {
+          display: none;
+      }
+
+      #logo-mobile {
+          display: block;
+          position: absolute;
+          left: 20px;
+          top: 20px;
+      }
+
+      #calicafe {
+          display: block;
+          position: absolute;
+          top: 5px;
+          color: #ebe5d5;
+          font-size: 50px;
+          text-shadow: 3px 3px #4a3432;
+      }
+
+      #kahvi{
+        max-width: 200px;
+        border: 2px solid #e07e3d;
+        
+        }
+        
+      .kissamme{
+        width: 100%;
+        margin: 0px;
+      }
+
+      .kissalista > li {
+        margin-bottom: 10px;
+      }
+      
+      .kissa_p {
+        margin-left: 0px;
+        padding-left: 5px;
+        max-width: 100%;
+      }
+      .nimet{
+        padding-left: 5px ;
+        margin-top: 15px;
+      }
+
+    }
+
+/* Jos esimerkiksi mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
+    @media (min-width: 600px) { 
+
+      #logo-mobile {
+          display: none;
+      }
+
+      #calicafe {
+          display: none;
+      }
+
+      main {
+        min-height: 800px;
+      }
+    }
+
+    @media (min-height: 800px) { 
+      main {
+        min-height: 850px;
+      }
+    }
+
 
 /* Fontit - Näistä voi kopioida itselleen fontin styleen jos se eroaa normaalista (roboto, 300, normal) 
 
