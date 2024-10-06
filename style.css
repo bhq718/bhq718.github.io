@@ -392,6 +392,7 @@
       main {
         padding-top: 100px;
       }
+      
       /* Estää footerin ja headerin "lagin" kun scrollaa mobiililla */
       header, footer {
         background-attachment: scroll;
