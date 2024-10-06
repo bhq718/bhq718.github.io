@@ -393,6 +393,10 @@
         padding-top: 100px;
       }
 
+      header, footer {
+        background-attachment: scroll;
+      }
+      
       .nav-links {
         display: none;
         flex-direction: column;
