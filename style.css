@@ -9,15 +9,16 @@
 
         */
 
-    /* Global Styles - ÄLÄ MUUTA 
-    * universaalinen koodi, joka valitsee kaikki elementit */
+        /* Global Styles - ÄLÄ MUUTA 
 
+    * universaalinen koodi, joka valitsee kaikki elementit. margin ja padding 0 varmistaa, 
+    että esimerkiksi footer ja header ovat ruudun reunoissa kiinni, eikä tule pakotettua marginia.*/
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
+    /* tekee scrollauksesta pehmeän eikä hyppää suoraan tekstiin kun klikkaa esim menua tai kissojen nimiä */
     html {
       scroll-behavior: smooth;
     }
@@ -32,9 +33,13 @@
       background-color: #fcfcf0;
       color: #4a3432;
       text-align: center;
+      min-height: 100vh;
+      overflow-y: scroll;
     }
 
-    /* Header Styles - ÄLÄ MUUTA */
+    /* Header Styles - ÄLÄ MUUTA 
+    Headerissä (ja footerissa) käytetty taustakuvaa värin sijaan. 
+    z-index varmistaa, että kyseinen elementti on kaikista päällimmäisin muihin verrattuna */
     header {
       display: flex;
       justify-content: center;
@@ -43,16 +48,18 @@
       position: fixed;
       width: 100%;
       height: 130px;
-      background-image: url("kuvat/header.png");
+      background-image: url("Kuvat/header.png");
       background-repeat: no-repeat;
       background-position: top;
       background-attachment: fixed;
+      padding-top: 15px;
       z-index: 1100;
       font-family: "Nerko One", system-ui;
-      font-size: 30px;
+      font-size: 38px;
       text-shadow: 2px 2px #4a3432;
+      color: #ebe5d5;
     }
-    
+
     /* Heading Styles - ÄLÄ MUUTA */
     h1 {
       font-family: "Nerko One", system-ui;
@@ -72,18 +79,21 @@
       font-size: 27px;
       letter-spacing: 2px;
     }
-    
 
-    /* Main Content Styles - ÄLÄ MUUTA */
+
+    /* Main Content Styles - ÄLÄ MUUTA 
+    Bodyn päälle tuleva main content box jolla varmistetaan, että isolla screenillä nettisivu ei leviä koko leveydelle vaan pysyy helposti luettavana */
+    
     main {
       background-color: #ebe5d5;
-      font-family: "Roboto", system-ui; 
+      font-family: "Roboto", system-ui;
       font-size: 17px;
       padding: 140px 35px 150px 20px;
       margin: auto;
       max-width: 1000px;
       text-align: left;
       position: relative;
+      min-height: 100vh;
     }
 
     /* Footer Styles - ÄLÄ MUUTA */
@@ -100,7 +110,7 @@
       z-index: 1000;
       color: #ebe5d5;
       text-align: center;
-      font-family: "Roboto", system-ui; 
+      font-family: "Roboto", system-ui;
       font-weight: 300;
       font-size: 14px;
       letter-spacing: 1px;
@@ -112,25 +122,27 @@
     }
 
     /* Link Styles - ÄLÄ MUUTA*/
+    /* Normaalin linkin ja navigaatiossa olevan linkin väri eroaa toisistaan. */
     a {
-      color:#e07e3d;
+      color: #4a3432;
     }
-    
+
     a:hover {
       color: #4a3432;
       text-decoration: underline;
     }
 
     .nav-links a {
-      color: #ebe5d5;
       text-decoration: none;
+      color: #ebe5d5;
     }
 
     .nav-links a:hover {
       color: #ebe5d5;
       text-decoration: underline;
     }
-    
+
+    /*navigaation asettelu flexboxina */ 
     .nav-links {
       display: flex;
       flex-grow: 1;
@@ -138,8 +150,14 @@
       max-width: 1000px;
       margin-top: -45px;
     }
+    /* Näyttää aktiivisen sivun navigaatiossa */
+    .active {
+      color: #4a3432;
+      text-shadow: 0px 0px #4a3432;
+    }
 
-    /* Toggle Button Styles - ÄLÄ MUUTA*/
+    /* Toggle Button Styles - ÄLÄ MUUTA
+    Hamburger menu */
     .toggle-button {
       display: none;
       background-color: #e07e3d;
@@ -147,6 +165,225 @@
       border: none;
       padding: 14px;
       cursor: pointer;
+    }
+
+    /* Tähän alle INDEX sivun style */
+
+    #taulukko {
+      max-width: 350px;
+      width: 100%;
+      border: 2px solid #e07e3d;
+      border-collapse: collapse;
+      border-spacing: 30px;
+      margin-left: 10px;
+      margin-top: 10px;
+      padding: 10px;
+    }
+    /*th on otsikko rivi ja td on solu */
+    th {
+      max-width: 100px;
+      background-color: #e07e3d;
+      opacity: 80%;
+      color: #4a3432;
+      padding: 10px;
+      border-bottom: 2px solid #e07e3d;
+    }
+
+    td {
+      border-bottom: 2px solid #e07e3d;
+      padding-left: 10px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+
+    }
+
+    #menu {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      scroll-margin-top: 100px;
+    }
+
+    #menu>div {
+      width: 50%;
+
+    }
+
+    #menukuva {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+    }
+
+    .kahvi {
+      width: 50%;
+      max-width: 250px;
+      border: 3px solid #e07e3d;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+
+    #esittely {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    #teksti {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-width: 200px;
+      padding-right: 10px;
+    }
+
+    #kahvila {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+      border: 3px solid #e07e3d;
+      border-radius: 5px;
+    }
+
+    /*Buttonin kaltevuus tulee transform määräyksellä rotate. Kun hiiren vie buttonin päälle, hover ja after tyylittelyllä buttonin border siirtyy lähemmäs buttonia. Hover tarkoittaa, kun hiiren vie buttonin tai objektin päälle ja after tarkoittaa sitä, kun buttonia tai objektia on painettu*/
+    .button {
+      max-width: 150px;
+    }
+
+    .button-53 {
+      background-color: #e07e3d;
+      border: 0px solid #8f6c49;
+      box-sizing: border-box;
+      color: #ebe5d5;
+      text-shadow: 3px 3px #4a3432;
+      text-decoration: none;
+      display: flex;
+      font-family: "Nerko One", system-ui;
+      font-size: 36px;
+      letter-spacing: 2px;
+      padding-bottom: 5px;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      max-width: 150px;
+      max-height: 50px;
+      cursor: pointer;
+      transform: rotate(-2deg);
+      touch-action: manipulation;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+
+    .button-53:focus {
+      outline: 0;
+    }
+
+    .button-53:hover {
+      text-shadow: 0px 0px #4a3432;
+    }
+
+    .button-53:after {
+      content: '';
+      position: absolute;
+      border: 1px solid #4a3432;
+      bottom: 4px;
+      left: 4px;
+      width: calc(100% - 1px);
+      height: calc(100% - 1px);
+    }
+
+    .button-53:hover:after {
+      bottom: 2px;
+      left: 2px;
+    }
+
+    /* Tähän alle KISSAMME sivun style */
+
+    .kissalista {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      list-style: none;
+      margin-left: -50px;
+    }
+
+    .kissalista>li {
+      padding: 25px;
+    }
+
+    .kissamme {
+      width: 60%;
+      max-width: 300px;
+      border: 3px solid #e07e3d;
+      margin-left: 15px;
+      border-radius: 5px;
+    }
+
+    .kissa_p {
+      margin-left: 20px;
+      padding: 15px;
+      max-width: 100%;
+    }
+
+    .flex-kissat {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-evenly;
+    }
+      /* Kissojen nimi ja esittely sisältyy tähän diviin, jotta ne pysyvät flexboxissa aina päällekkäin */
+    .tekstikis {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-width: 250px;
+      width: 100%;
+      margin-top: 25px;
+    }
+
+    .nimet {
+      padding-left: 30px;
+      margin-top: 15px;
+    }
+    /* ankkurit kissoihin. Scroll margin varmistaa, että informaatio ei jää headerin alle klikatessa */
+    #tuuloma,
+    #tonava,
+    #kiira,
+    #luxi,
+    #kerttu {
+      scroll-margin-top: 120px;
+    }
+
+    /* Tähän alle YHTEYSTIEDOT sivun style */
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+
+    }
+    /* Kartta upotus google mapsista */
+    #kartta {
+      max-width: 400px;
+      border: 3px solid #e07e3d;
+      border-radius: 5px;
+      margin-top: 25px;
+      margin-right: 5px;
+      margin-left: 10px;
+      width: 400px;
+      height: 300px;
+
     }
 
     /* Media Queries - eli responisiiviset stylet mobiilinäkymään - voit lisätä, mutta ÄLÄ MUUTA olemassa olevia */
@@ -157,73 +394,95 @@
       }
 
       .nav-links {
-          display: none;
-          flex-direction: column;
-          width: 100%;
-          position: absolute;
-          background-color: #e07e3d;
-          top: 50px;
-          height: 100vh;
-          justify-content: center;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #e07e3d;
+        top: 50px;
+        height: 100vh;
+        justify-content: center;
       }
 
-      .nav-links > a {
-          font-size: 45px;
-          padding: 0px 50px 50px 50px;
-          text-shadow: 4px 4px #4a3432;
+      .nav-links>a {
+        font-size: 45px;
+        padding: 0px 50px 50px 50px;
+        text-shadow: 4px 4px #4a3432;
       }
 
       .toggle-button {
-          display: block;
-          position: absolute;
-          right: 20px;
-          top: 20px;
-          z-index: 1100;
-          font-size: 30px;
-          text-shadow: 3px 3px #4a3432;
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1100;
+        font-size: 30px;
+        text-shadow: 3px 3px #4a3432;
       }
 
       .nav-links.active {
-          display: flex;
+        display: flex;
       }
 
       #logo {
-          display: none;
+        display: none;
       }
-
+      /* Mobiilissa originaali logo hävitetään (koska se on osa navigaation flex boxia ja haluamme sen navigaation ulkopuolelle) 
+      ja paikalle lisätään toinen logo joka näkyy vain mobiilissa*/
       #logo-mobile {
-          display: block;
-          position: absolute;
-          left: 20px;
-          top: 20px;
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 5px;
+        max-height: 70px;
       }
 
       #calicafe {
-          display: block;
-          position: absolute;
-          top: 5px;
-          color: #ebe5d5;
-          font-size: 50px;
-          text-shadow: 3px 3px #4a3432;
+        display: block;
+        position: absolute;
+        top: 5px;
+        color: #ebe5d5;
+        font-size: 50px;
+        text-shadow: 3px 3px #4a3432;
       }
 
-      #kahvi{
-        max-width: 200px;
+      .kahvi {
         border: 2px solid #e07e3d;
-        
-        }
+        margin-right: 10px;
+
+      }
+
+      .kissamme {
+        width: 100%;
+        margin: 0px;
+      }
+
+      .kissalista>li {
+        margin: 0px;
+      }
+
+      .kissa_p {
+        margin-left: 0px;
+        padding-left: 5px;
+        max-width: 100%;
+      }
+
+      .nimet {
+        padding-left: 5px;
+        margin-top: 15px;
+      }
 
     }
 
-/* Jos mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
-    @media (min-width: 600px) { 
+    /* Jos esimerkiksi mobiilinäkymään lisätään jotain mitä ei haluta näkyvän selaimessa*/
+    @media (min-width: 600px) {
 
       #logo-mobile {
-          display: none;
+        display: none;
       }
 
       #calicafe {
-          display: none;
+        display: none;
       }
 
       main {
@@ -231,93 +490,36 @@
       }
     }
 
-/* Tähän alle INDEX sivun style */
+    @media (min-height: 800px) {
+      main {
+        min-height: 850px;
+      }
+    }
 
 
-
-/* Tähän alle KISSAMME sivun style */
-.kissalista {
-  margin-left: 15px;
-  padding: 25px;
-  background-color:#fcfcf0;
-  max-width: 90%;
-  border-radius: 10px;
-  border-style:solid;
-  border-color: #4a3432;
-  border-width: 1px;
-  font-size:larger;
-}
-.kissamme {
-  max-width: 400px;
-  border: 2px solid #e07e3d;
-  margin-left: 15px;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: #ebe5d5;
-}
-.kissa_p {
-  display:flex;
-  flex-direction: row;
-  flex:1;
-  margin-left: 15px;;
-  padding: 15px;
-  background-color:#fcfcf0;
-  max-width: 50%;
-  border-radius: 10px;
-  border: 2px solid #e07e3d;
-}
-
-
-
-/* Tähän alle YHTEYSTIEDOT sivun style */
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  flex: 2;
-
-}
-
-#kartta {
-max-width: 500px;
-border: 2px solid #e07e3d;
-border-radius: 20%;
-margin-top: 25px;
-margin-right: 5px;
-
-
-}
-
-/* Fontit - Näistä voi kopioida itselleen fontin styleen jos se eroaa normaalista (roboto, 300, normal) 
+    /* Fontit - Näistä voi kopioida itselleen fontin styleen jos se eroaa normaalista (roboto, 300, normal) 
 
 .roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-style: normal;
 }
 
 .roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+font-family: "Roboto", sans-serif;
+font-weight: 900;
+font-style: normal;
 }
 
 .nerko-one-regular {
-  font-family: "Nerko One", cursive;
-  font-weight: 400;
-  font-style: normal;
+font-family: "Nerko One", cursive;
+font-weight: 400;
+font-style: normal;
 }
 */
