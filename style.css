@@ -427,7 +427,8 @@
       #logo {
         display: none;
       }
-
+      /* Mobiilissa originaali logo hävitetään (koska se on osa navigaation flex boxia ja haluamme sen navigaation ulkopuolelle) 
+      ja paikalle lisätään toinen logo joka näkyy vain mobiilissa*/
       #logo-mobile {
         display: block;
         position: absolute;
