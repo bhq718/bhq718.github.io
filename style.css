@@ -10,14 +10,15 @@
         */
 
         /* Global Styles - ÄLÄ MUUTA 
-    * universaalinen koodi, joka valitsee kaikki elementit */
 
+    * universaalinen koodi, joka valitsee kaikki elementit. margin ja padding 0 varmistaa, 
+    että esimerkiksi footer ja header ovat ruudun reunoissa kiinni, eikä tule pakotettua marginia.*/
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
+    /* tekee scrollauksesta pehmeän eikä hyppää suoraan tekstiin kun klikkaa esim menua tai kissojen nimiä */
     html {
       scroll-behavior: smooth;
     }
@@ -36,7 +37,9 @@
       overflow-y: scroll;
     }
 
-    /* Header Styles - ÄLÄ MUUTA */
+    /* Header Styles - ÄLÄ MUUTA 
+    Headerissä (ja footerissa) käytetty taustakuvaa värin sijaan. 
+    z-index varmistaa, että kyseinen elementti on kaikista päällimmäisin muihin verrattuna */
     header {
       display: flex;
       justify-content: center;
@@ -78,7 +81,9 @@
     }
 
 
-    /* Main Content Styles - ÄLÄ MUUTA */
+    /* Main Content Styles - ÄLÄ MUUTA 
+    Bodyn päälle tuleva main content box jolla varmistetaan, että isolla screenillä nettisivu ei leviä koko leveydelle vaan pysyy helposti luettavana */
+    
     main {
       background-color: #ebe5d5;
       font-family: "Roboto", system-ui;
@@ -117,7 +122,7 @@
     }
 
     /* Link Styles - ÄLÄ MUUTA*/
-
+    /* Normaalin linkin ja navigaatiossa olevan linkin väri eroaa toisistaan. */
     a {
       color: #4a3432;
     }
@@ -137,6 +142,7 @@
       text-decoration: underline;
     }
 
+    /*navigaation asettelu flexboxina */ 
     .nav-links {
       display: flex;
       flex-grow: 1;
@@ -144,13 +150,14 @@
       max-width: 1000px;
       margin-top: -45px;
     }
-
+    /* Näyttää aktiivisen sivun navigaatiossa */
     .active {
       color: #4a3432;
       text-shadow: 0px 0px #4a3432;
     }
 
-    /* Toggle Button Styles - ÄLÄ MUUTA*/
+    /* Toggle Button Styles - ÄLÄ MUUTA
+    Hamburger menu */
     .toggle-button {
       display: none;
       background-color: #e07e3d;
@@ -328,7 +335,7 @@
       align-items: flex-start;
       justify-content: space-evenly;
     }
-
+      /* Kissojen nimi ja esittely sisältyy tähän diviin, jotta ne pysyvät flexboxissa aina päällekkäin */
     .tekstikis {
       display: flex;
       flex-direction: column;
@@ -342,7 +349,7 @@
       padding-left: 30px;
       margin-top: 15px;
     }
-
+    /* ankkurit kissoihin. Scroll margin varmistaa, että informaatio ei jää headerin alle klikatessa */
     #tuuloma,
     #tonava,
     #kiira,
@@ -366,7 +373,7 @@
       flex: 2;
 
     }
-
+    /* Kartta upotus google mapsista */
     #kartta {
       max-width: 400px;
       border: 3px solid #e07e3d;
